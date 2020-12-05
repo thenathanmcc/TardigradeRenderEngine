@@ -25,6 +25,9 @@ public:
 
 	Object();
 
+	virtual ~Object() {
+		delete m_shader;
+	}
 
 	void setObjectShader(Shader* shader);
 
@@ -44,7 +47,7 @@ public:
 
 	void unBindShaders();
 
-	virtual void render(Camera* camera);
+	virtual void render(Camera* camera) = 0;
 
 private:
 	std::string name;

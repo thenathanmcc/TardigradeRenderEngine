@@ -8,6 +8,7 @@
 #include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
+#include <iostream>
 
 using namespace glm;
 
@@ -62,23 +63,28 @@ void Controls::checkUserInputs(GLFWwindow* window) {
 
 	glm::vec3 up = glm::cross(right, direction);
 
-	if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS) {
+	if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) {
+		//std::cout << "UP Pressed" << std::endl;
 		position += direction * deltaTime * m_movementSpeed;
 	}
 
-	if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS) {
+	if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) {
+		//std::cout << "Down Pressed" << std::endl;
 		position -= direction * deltaTime * m_movementSpeed;
 	}
 
-	if (glfwGetKey(window, GLFW_KEY_RIGHT) == GLFW_PRESS) {
+	if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) {
+		//std::cout << "Right Pressed" << std::endl;
 		position += right * deltaTime * m_movementSpeed;
 	}
 
-	if (glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS) {
+	if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) {
+		//std::cout << "Left Pressed" << std::endl;
 		position -= right * deltaTime * m_movementSpeed;
 	}
 
 	if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
+		//std::cout << "Escape Pressed" << std::endl;
 		glfwSetWindowShouldClose(window, true);
 	}
 

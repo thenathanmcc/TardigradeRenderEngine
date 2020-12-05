@@ -4,15 +4,16 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/nathan/projects/c++/opengl/RenderEngine/src/Camera.cpp" "/home/nathan/projects/c++/opengl/RenderEngine/CMakeFiles/RenderEngine.dir/src/Camera.cpp.o"
-  "/home/nathan/projects/c++/opengl/RenderEngine/src/Controls.cpp" "/home/nathan/projects/c++/opengl/RenderEngine/CMakeFiles/RenderEngine.dir/src/Controls.cpp.o"
-  "/home/nathan/projects/c++/opengl/RenderEngine/src/ObjLoader.cpp" "/home/nathan/projects/c++/opengl/RenderEngine/CMakeFiles/RenderEngine.dir/src/ObjLoader.cpp.o"
-  "/home/nathan/projects/c++/opengl/RenderEngine/src/Object.cpp" "/home/nathan/projects/c++/opengl/RenderEngine/CMakeFiles/RenderEngine.dir/src/Object.cpp.o"
-  "/home/nathan/projects/c++/opengl/RenderEngine/src/Scene.cpp" "/home/nathan/projects/c++/opengl/RenderEngine/CMakeFiles/RenderEngine.dir/src/Scene.cpp.o"
-  "/home/nathan/projects/c++/opengl/RenderEngine/src/Shader.cpp" "/home/nathan/projects/c++/opengl/RenderEngine/CMakeFiles/RenderEngine.dir/src/Shader.cpp.o"
-  "/home/nathan/projects/c++/opengl/RenderEngine/src/Texture.cpp" "/home/nathan/projects/c++/opengl/RenderEngine/CMakeFiles/RenderEngine.dir/src/Texture.cpp.o"
-  "/home/nathan/projects/c++/opengl/RenderEngine/src/main.cpp" "/home/nathan/projects/c++/opengl/RenderEngine/CMakeFiles/RenderEngine.dir/src/main.cpp.o"
-  "/home/nathan/projects/c++/opengl/RenderEngine/src/stb_image.cpp" "/home/nathan/projects/c++/opengl/RenderEngine/CMakeFiles/RenderEngine.dir/src/stb_image.cpp.o"
+  "/home/nathan/projects/c++/TardigradeRenderEngine/src/Camera.cpp" "/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles/RenderEngine.dir/src/Camera.cpp.o"
+  "/home/nathan/projects/c++/TardigradeRenderEngine/src/Controls.cpp" "/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles/RenderEngine.dir/src/Controls.cpp.o"
+  "/home/nathan/projects/c++/TardigradeRenderEngine/src/Cube.cpp" "/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles/RenderEngine.dir/src/Cube.cpp.o"
+  "/home/nathan/projects/c++/TardigradeRenderEngine/src/ObjLoader.cpp" "/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles/RenderEngine.dir/src/ObjLoader.cpp.o"
+  "/home/nathan/projects/c++/TardigradeRenderEngine/src/Object.cpp" "/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles/RenderEngine.dir/src/Object.cpp.o"
+  "/home/nathan/projects/c++/TardigradeRenderEngine/src/Scene.cpp" "/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles/RenderEngine.dir/src/Scene.cpp.o"
+  "/home/nathan/projects/c++/TardigradeRenderEngine/src/Shader.cpp" "/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles/RenderEngine.dir/src/Shader.cpp.o"
+  "/home/nathan/projects/c++/TardigradeRenderEngine/src/Texture.cpp" "/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles/RenderEngine.dir/src/Texture.cpp.o"
+  "/home/nathan/projects/c++/TardigradeRenderEngine/src/main.cpp" "/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles/RenderEngine.dir/src/main.cpp.o"
+  "/home/nathan/projects/c++/TardigradeRenderEngine/src/stb_image.cpp" "/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles/RenderEngine.dir/src/stb_image.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -26,8 +27,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/nathan/projects/c++/opengl/RenderEngine/external/GLAD/CMakeFiles/glad.dir/DependInfo.cmake"
-  "/home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "/home/nathan/projects/c++/TardigradeRenderEngine/external/GLAD/CMakeFiles/glad.dir/DependInfo.cmake"
+  "/home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

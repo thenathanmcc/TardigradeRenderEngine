@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/RenderEngine.dir/src/Camera.cpp.o"
   "CMakeFiles/RenderEngine.dir/src/Controls.cpp.o"
+  "CMakeFiles/RenderEngine.dir/src/Cube.cpp.o"
   "CMakeFiles/RenderEngine.dir/src/ObjLoader.cpp.o"
   "CMakeFiles/RenderEngine.dir/src/Object.cpp.o"
   "CMakeFiles/RenderEngine.dir/src/Scene.cpp.o"

@@ -1,4 +1,4 @@
-# Install script for directory: /home/nathan/projects/c++/opengl/RenderEngine/external/GLAD
+# Install script for directory: /home/nathan/projects/c++/TardigradeRenderEngine/external/GLAD
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

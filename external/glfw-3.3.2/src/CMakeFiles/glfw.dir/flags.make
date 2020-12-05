@@ -6,7 +6,7 @@ C_FLAGS = -fPIC   -Wall -std=gnu99
 
 C_DEFINES = -D_GLFW_USE_CONFIG_H
 
-C_INCLUDES = -I/home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/include -I/home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/src 
+C_INCLUDES = -I/home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/include -I/home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/src 
 
 # Custom flags: external/glfw-3.3.2/src/CMakeFiles/glfw.dir/context.c.o_FLAGS = -Wdeclaration-after-statement
 

@@ -6,5 +6,5 @@ C_FLAGS =   -std=gnu99
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/deps -I/home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/include 
+C_INCLUDES = -I/home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/deps -I/home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/include 
 

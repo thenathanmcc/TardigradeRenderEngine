@@ -99,6 +99,10 @@ void Shader::checkLinkingErrors(unsigned int shaderID) {
 	}
 }
 
+GLuint Shader::getShaderID(){
+	return shaderProgramID;
+}
+
 //Uniform setter functions
 void Shader::setBool(const std::string &UniformName, bool value) const {
 	glUniform1i(glGetUniformLocation(shaderProgramID, UniformName.c_str()), (int) value);

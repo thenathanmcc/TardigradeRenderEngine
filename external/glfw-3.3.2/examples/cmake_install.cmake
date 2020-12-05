@@ -1,4 +1,4 @@
-# Install script for directory: /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/examples
+# Install script for directory: /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/examples
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

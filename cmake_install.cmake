@@ -1,4 +1,4 @@
-# Install script for directory: /home/nathan/projects/c++/opengl/RenderEngine
+# Install script for directory: /home/nathan/projects/c++/TardigradeRenderEngine
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/cmake_install.cmake")
-  include("/home/nathan/projects/c++/opengl/RenderEngine/external/GLAD/cmake_install.cmake")
+  include("/home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/cmake_install.cmake")
+  include("/home/nathan/projects/c++/TardigradeRenderEngine/external/GLAD/cmake_install.cmake")
 
 endif()
 
@@ -52,5 +52,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/nathan/projects/c++/opengl/RenderEngine/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/nathan/projects/c++/TardigradeRenderEngine/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

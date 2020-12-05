@@ -6,5 +6,5 @@ C_FLAGS =
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/nathan/projects/c++/opengl/RenderEngine/external/GLAD/include 
+C_INCLUDES = -I/home/nathan/projects/c++/TardigradeRenderEngine/external/GLAD/include 
 

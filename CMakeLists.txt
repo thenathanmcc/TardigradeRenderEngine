@@ -27,9 +27,10 @@ add_executable(RenderEngine
     src/Camera.cpp
     src/Controls.cpp
     src/Texture.cpp
-    src/Object.cpp
     src/Scene.cpp
     src/ObjLoader.cpp
+    src/Object.cpp
+    src/Cube.cpp
 )
 
 target_link_libraries(RenderEngine PRIVATE glad glfw ${GLFW_LIBRARIES})

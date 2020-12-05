@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/nathan/projects/c++/opengl/RenderEngine/external/GLAD/src/glad.c" "/home/nathan/projects/c++/opengl/RenderEngine/external/GLAD/CMakeFiles/glad.dir/src/glad.c.o"
+  "/home/nathan/projects/c++/TardigradeRenderEngine/external/GLAD/src/glad.c" "/home/nathan/projects/c++/TardigradeRenderEngine/external/GLAD/CMakeFiles/glad.dir/src/glad.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

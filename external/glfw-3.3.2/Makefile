@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nathan/projects/c++/opengl/RenderEngine
+CMAKE_SOURCE_DIR = /home/nathan/projects/c++/TardigradeRenderEngine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nathan/projects/c++/opengl/RenderEngine
+CMAKE_BINARY_DIR = /home/nathan/projects/c++/TardigradeRenderEngine
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -115,8 +115,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -126,14 +126,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/nathan/projects/c++/opengl/RenderEngine && $(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/projects/c++/opengl/RenderEngine/CMakeFiles /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/CMakeFiles/progress.marks
-	cd /home/nathan/projects/c++/opengl/RenderEngine && $(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.3.2/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/projects/c++/opengl/RenderEngine/CMakeFiles 0
+	cd /home/nathan/projects/c++/TardigradeRenderEngine && $(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/CMakeFiles/progress.marks
+	cd /home/nathan/projects/c++/TardigradeRenderEngine && $(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.3.2/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/nathan/projects/c++/opengl/RenderEngine && $(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.3.2/clean
+	cd /home/nathan/projects/c++/TardigradeRenderEngine && $(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.3.2/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/nathan/projects/c++/opengl/RenderEngine && $(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.3.2/preinstall
+	cd /home/nathan/projects/c++/TardigradeRenderEngine && $(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.3.2/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/nathan/projects/c++/opengl/RenderEngine && $(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.3.2/preinstall
+	cd /home/nathan/projects/c++/TardigradeRenderEngine && $(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.3.2/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/nathan/projects/c++/opengl/RenderEngine && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/nathan/projects/c++/TardigradeRenderEngine && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 external/glfw-3.3.2/CMakeFiles/uninstall.dir/rule:
-	cd /home/nathan/projects/c++/opengl/RenderEngine && $(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.3.2/CMakeFiles/uninstall.dir/rule
+	cd /home/nathan/projects/c++/TardigradeRenderEngine && $(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.3.2/CMakeFiles/uninstall.dir/rule
 .PHONY : external/glfw-3.3.2/CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ uninstall: external/glfw-3.3.2/CMakeFiles/uninstall.dir/rule
 
 # fast build rule for target.
 uninstall/fast:
-	cd /home/nathan/projects/c++/opengl/RenderEngine && $(MAKE) -f external/glfw-3.3.2/CMakeFiles/uninstall.dir/build.make external/glfw-3.3.2/CMakeFiles/uninstall.dir/build
+	cd /home/nathan/projects/c++/TardigradeRenderEngine && $(MAKE) -f external/glfw-3.3.2/CMakeFiles/uninstall.dir/build.make external/glfw-3.3.2/CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
 # Help Target
@@ -195,6 +195,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/nathan/projects/c++/opengl/RenderEngine && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/nathan/projects/c++/TardigradeRenderEngine && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

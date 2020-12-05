@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/deps/getopt.c
+/home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/deps/getopt.c
 getopt.h
-/home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/deps/getopt.h
+/home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/deps/getopt.h
 stddef.h
 -
 string.h
 -
 
-/home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/deps/getopt.h
+/home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/deps/getopt.h
 
-/home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/deps/glad_gl.c
+/home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/deps/glad_gl.c
 stdio.h
 -
 stdlib.h
@@ -26,7 +26,7 @@ string.h
 glad/gl.h
 -
 
-/home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests/iconify.c
+/home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests/iconify.c
 glad/gl.h
 -
 GLFW/glfw3.h
@@ -36,7 +36,7 @@ stdio.h
 stdlib.h
 -
 getopt.h
-/home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests/getopt.h
+/home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests/getopt.h
 
 external/glfw-3.3.2/deps/getopt.h
 

@@ -29,6 +29,9 @@ public:
 	/* Retrieve camera's view matrix */
 	glm::mat4 getViewMatrix();
 
+	/* Retrieve camera's project matrix * camera's view matrix */
+	glm::mat4 getViewProjectionMatrix();
+
 	/* Set the camera's position vector */
 	void setCameraPosition(glm::vec3 position);
 

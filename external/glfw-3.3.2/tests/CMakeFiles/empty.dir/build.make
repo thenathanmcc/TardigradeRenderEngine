@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nathan/projects/c++/opengl/RenderEngine
+CMAKE_SOURCE_DIR = /home/nathan/projects/c++/TardigradeRenderEngine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nathan/projects/c++/opengl/RenderEngine
+CMAKE_BINARY_DIR = /home/nathan/projects/c++/TardigradeRenderEngine
 
 # Include any dependencies generated for this target.
 include external/glfw-3.3.2/tests/CMakeFiles/empty.dir/depend.make
@@ -59,42 +59,42 @@ include external/glfw-3.3.2/tests/CMakeFiles/empty.dir/flags.make
 
 external/glfw-3.3.2/tests/CMakeFiles/empty.dir/empty.c.o: external/glfw-3.3.2/tests/CMakeFiles/empty.dir/flags.make
 external/glfw-3.3.2/tests/CMakeFiles/empty.dir/empty.c.o: external/glfw-3.3.2/tests/empty.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nathan/projects/c++/opengl/RenderEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object external/glfw-3.3.2/tests/CMakeFiles/empty.dir/empty.c.o"
-	cd /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/empty.dir/empty.c.o   -c /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests/empty.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object external/glfw-3.3.2/tests/CMakeFiles/empty.dir/empty.c.o"
+	cd /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/empty.dir/empty.c.o   -c /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests/empty.c
 
 external/glfw-3.3.2/tests/CMakeFiles/empty.dir/empty.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/empty.dir/empty.c.i"
-	cd /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests/empty.c > CMakeFiles/empty.dir/empty.c.i
+	cd /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests/empty.c > CMakeFiles/empty.dir/empty.c.i
 
 external/glfw-3.3.2/tests/CMakeFiles/empty.dir/empty.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/empty.dir/empty.c.s"
-	cd /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests/empty.c -o CMakeFiles/empty.dir/empty.c.s
+	cd /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests/empty.c -o CMakeFiles/empty.dir/empty.c.s
 
 external/glfw-3.3.2/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.o: external/glfw-3.3.2/tests/CMakeFiles/empty.dir/flags.make
 external/glfw-3.3.2/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.o: external/glfw-3.3.2/deps/tinycthread.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nathan/projects/c++/opengl/RenderEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object external/glfw-3.3.2/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.o"
-	cd /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/empty.dir/__/deps/tinycthread.c.o   -c /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/deps/tinycthread.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object external/glfw-3.3.2/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.o"
+	cd /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/empty.dir/__/deps/tinycthread.c.o   -c /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/deps/tinycthread.c
 
 external/glfw-3.3.2/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/empty.dir/__/deps/tinycthread.c.i"
-	cd /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/deps/tinycthread.c > CMakeFiles/empty.dir/__/deps/tinycthread.c.i
+	cd /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/deps/tinycthread.c > CMakeFiles/empty.dir/__/deps/tinycthread.c.i
 
 external/glfw-3.3.2/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/empty.dir/__/deps/tinycthread.c.s"
-	cd /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/deps/tinycthread.c -o CMakeFiles/empty.dir/__/deps/tinycthread.c.s
+	cd /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/deps/tinycthread.c -o CMakeFiles/empty.dir/__/deps/tinycthread.c.s
 
 external/glfw-3.3.2/tests/CMakeFiles/empty.dir/__/deps/glad_gl.c.o: external/glfw-3.3.2/tests/CMakeFiles/empty.dir/flags.make
 external/glfw-3.3.2/tests/CMakeFiles/empty.dir/__/deps/glad_gl.c.o: external/glfw-3.3.2/deps/glad_gl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nathan/projects/c++/opengl/RenderEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object external/glfw-3.3.2/tests/CMakeFiles/empty.dir/__/deps/glad_gl.c.o"
-	cd /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/empty.dir/__/deps/glad_gl.c.o   -c /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/deps/glad_gl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object external/glfw-3.3.2/tests/CMakeFiles/empty.dir/__/deps/glad_gl.c.o"
+	cd /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/empty.dir/__/deps/glad_gl.c.o   -c /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/deps/glad_gl.c
 
 external/glfw-3.3.2/tests/CMakeFiles/empty.dir/__/deps/glad_gl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/empty.dir/__/deps/glad_gl.c.i"
-	cd /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/deps/glad_gl.c > CMakeFiles/empty.dir/__/deps/glad_gl.c.i
+	cd /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/deps/glad_gl.c > CMakeFiles/empty.dir/__/deps/glad_gl.c.i
 
 external/glfw-3.3.2/tests/CMakeFiles/empty.dir/__/deps/glad_gl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/empty.dir/__/deps/glad_gl.c.s"
-	cd /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/deps/glad_gl.c -o CMakeFiles/empty.dir/__/deps/glad_gl.c.s
+	cd /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/deps/glad_gl.c -o CMakeFiles/empty.dir/__/deps/glad_gl.c.s
 
 # Object files for target empty
 empty_OBJECTS = \
@@ -114,8 +114,8 @@ external/glfw-3.3.2/tests/empty: /usr/lib/x86_64-linux-gnu/libm.so
 external/glfw-3.3.2/tests/empty: /usr/lib/x86_64-linux-gnu/librt.so
 external/glfw-3.3.2/tests/empty: /usr/lib/x86_64-linux-gnu/libX11.so
 external/glfw-3.3.2/tests/empty: external/glfw-3.3.2/tests/CMakeFiles/empty.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nathan/projects/c++/opengl/RenderEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable empty"
-	cd /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/empty.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable empty"
+	cd /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/empty.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 external/glfw-3.3.2/tests/CMakeFiles/empty.dir/build: external/glfw-3.3.2/tests/empty
@@ -123,10 +123,10 @@ external/glfw-3.3.2/tests/CMakeFiles/empty.dir/build: external/glfw-3.3.2/tests/
 .PHONY : external/glfw-3.3.2/tests/CMakeFiles/empty.dir/build
 
 external/glfw-3.3.2/tests/CMakeFiles/empty.dir/clean:
-	cd /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests && $(CMAKE_COMMAND) -P CMakeFiles/empty.dir/cmake_clean.cmake
+	cd /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests && $(CMAKE_COMMAND) -P CMakeFiles/empty.dir/cmake_clean.cmake
 .PHONY : external/glfw-3.3.2/tests/CMakeFiles/empty.dir/clean
 
 external/glfw-3.3.2/tests/CMakeFiles/empty.dir/depend:
-	cd /home/nathan/projects/c++/opengl/RenderEngine && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nathan/projects/c++/opengl/RenderEngine /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests /home/nathan/projects/c++/opengl/RenderEngine /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests/CMakeFiles/empty.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nathan/projects/c++/TardigradeRenderEngine && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nathan/projects/c++/TardigradeRenderEngine /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests /home/nathan/projects/c++/TardigradeRenderEngine /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests/CMakeFiles/empty.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : external/glfw-3.3.2/tests/CMakeFiles/empty.dir/depend
 

@@ -8,20 +8,24 @@
 
 
 Camera::Camera() {
-	m_position = glm::vec3(0, 0, -3);
+	m_position = glm::vec3(0, 0, -1);
+	m_yawAngle = 3.14f;
+	m_pitchAngle = 0.0f;
 	m_target = glm::vec3(0, 0, 0);
 	m_up = glm::vec3(0, 1, 0);
-	m_foV = 40.0f;
-	m_projectionMatrix = glm::perspective(m_foV, 4.0f / 3.0f, 0.1f, 1000.0f);
+	m_foV = 45.0f;
+	m_projectionMatrix = glm::perspective(m_foV, 1280.0f / 720.0f, 0.1f, 1000.0f);
 	m_viewMatrix = glm::lookAt(
 			m_position,
-			glm::vec3(0, 0, 0),
-			glm::vec3(0, 1, 0)
+			m_target,
+			m_up
 	);
 }
 
 Camera::Camera(glm::vec3 position, glm::vec3 target, glm::vec3 up) {
 	m_position = position;
+	m_yawAngle = 3.14f;
+	m_pitchAngle = 0.0f;
 	m_target = target;
 	m_up = up;
 	m_foV = 40.0f;
@@ -43,6 +47,10 @@ glm::mat4 Camera::getProjectionMatrix() {
 
 glm::mat4 Camera::getViewMatrix() {
 	return m_viewMatrix;
+}
+
+glm::mat4 Camera::getViewProjectionMatrix() {
+	return m_projectionMatrix * m_viewMatrix;
 }
 
 void Camera::setCameraPosition(glm::vec3 position) {
@@ -73,6 +81,8 @@ void Camera::setCameraOrientation(float pitchAngle, float yawAngle, float rollAn
 	m_pitchAngle = pitchAngle;
 	m_yawAngle = yawAngle;
 	m_rollAngle = rollAngle;
+
+	updateCameraAngles();
 }
 
 void Camera::updateCameraAngles() {

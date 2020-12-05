@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nathan/projects/c++/opengl/RenderEngine
+CMAKE_SOURCE_DIR = /home/nathan/projects/c++/TardigradeRenderEngine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nathan/projects/c++/opengl/RenderEngine
+CMAKE_BINARY_DIR = /home/nathan/projects/c++/TardigradeRenderEngine
 
 # Include any dependencies generated for this target.
 include external/glfw-3.3.2/tests/CMakeFiles/opacity.dir/depend.make
@@ -59,29 +59,29 @@ include external/glfw-3.3.2/tests/CMakeFiles/opacity.dir/flags.make
 
 external/glfw-3.3.2/tests/CMakeFiles/opacity.dir/opacity.c.o: external/glfw-3.3.2/tests/CMakeFiles/opacity.dir/flags.make
 external/glfw-3.3.2/tests/CMakeFiles/opacity.dir/opacity.c.o: external/glfw-3.3.2/tests/opacity.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nathan/projects/c++/opengl/RenderEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object external/glfw-3.3.2/tests/CMakeFiles/opacity.dir/opacity.c.o"
-	cd /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/opacity.dir/opacity.c.o   -c /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests/opacity.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object external/glfw-3.3.2/tests/CMakeFiles/opacity.dir/opacity.c.o"
+	cd /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/opacity.dir/opacity.c.o   -c /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests/opacity.c
 
 external/glfw-3.3.2/tests/CMakeFiles/opacity.dir/opacity.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/opacity.dir/opacity.c.i"
-	cd /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests/opacity.c > CMakeFiles/opacity.dir/opacity.c.i
+	cd /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests/opacity.c > CMakeFiles/opacity.dir/opacity.c.i
 
 external/glfw-3.3.2/tests/CMakeFiles/opacity.dir/opacity.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/opacity.dir/opacity.c.s"
-	cd /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests/opacity.c -o CMakeFiles/opacity.dir/opacity.c.s
+	cd /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests/opacity.c -o CMakeFiles/opacity.dir/opacity.c.s
 
 external/glfw-3.3.2/tests/CMakeFiles/opacity.dir/__/deps/glad_gl.c.o: external/glfw-3.3.2/tests/CMakeFiles/opacity.dir/flags.make
 external/glfw-3.3.2/tests/CMakeFiles/opacity.dir/__/deps/glad_gl.c.o: external/glfw-3.3.2/deps/glad_gl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nathan/projects/c++/opengl/RenderEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object external/glfw-3.3.2/tests/CMakeFiles/opacity.dir/__/deps/glad_gl.c.o"
-	cd /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/opacity.dir/__/deps/glad_gl.c.o   -c /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/deps/glad_gl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object external/glfw-3.3.2/tests/CMakeFiles/opacity.dir/__/deps/glad_gl.c.o"
+	cd /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/opacity.dir/__/deps/glad_gl.c.o   -c /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/deps/glad_gl.c
 
 external/glfw-3.3.2/tests/CMakeFiles/opacity.dir/__/deps/glad_gl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/opacity.dir/__/deps/glad_gl.c.i"
-	cd /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/deps/glad_gl.c > CMakeFiles/opacity.dir/__/deps/glad_gl.c.i
+	cd /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/deps/glad_gl.c > CMakeFiles/opacity.dir/__/deps/glad_gl.c.i
 
 external/glfw-3.3.2/tests/CMakeFiles/opacity.dir/__/deps/glad_gl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/opacity.dir/__/deps/glad_gl.c.s"
-	cd /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/deps/glad_gl.c -o CMakeFiles/opacity.dir/__/deps/glad_gl.c.s
+	cd /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/deps/glad_gl.c -o CMakeFiles/opacity.dir/__/deps/glad_gl.c.s
 
 # Object files for target opacity
 opacity_OBJECTS = \
@@ -100,8 +100,8 @@ external/glfw-3.3.2/tests/opacity: /usr/lib/x86_64-linux-gnu/librt.so
 external/glfw-3.3.2/tests/opacity: /usr/lib/x86_64-linux-gnu/libm.so
 external/glfw-3.3.2/tests/opacity: /usr/lib/x86_64-linux-gnu/libX11.so
 external/glfw-3.3.2/tests/opacity: external/glfw-3.3.2/tests/CMakeFiles/opacity.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nathan/projects/c++/opengl/RenderEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable opacity"
-	cd /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opacity.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable opacity"
+	cd /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opacity.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 external/glfw-3.3.2/tests/CMakeFiles/opacity.dir/build: external/glfw-3.3.2/tests/opacity
@@ -109,10 +109,10 @@ external/glfw-3.3.2/tests/CMakeFiles/opacity.dir/build: external/glfw-3.3.2/test
 .PHONY : external/glfw-3.3.2/tests/CMakeFiles/opacity.dir/build
 
 external/glfw-3.3.2/tests/CMakeFiles/opacity.dir/clean:
-	cd /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests && $(CMAKE_COMMAND) -P CMakeFiles/opacity.dir/cmake_clean.cmake
+	cd /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests && $(CMAKE_COMMAND) -P CMakeFiles/opacity.dir/cmake_clean.cmake
 .PHONY : external/glfw-3.3.2/tests/CMakeFiles/opacity.dir/clean
 
 external/glfw-3.3.2/tests/CMakeFiles/opacity.dir/depend:
-	cd /home/nathan/projects/c++/opengl/RenderEngine && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nathan/projects/c++/opengl/RenderEngine /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests /home/nathan/projects/c++/opengl/RenderEngine /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests/CMakeFiles/opacity.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nathan/projects/c++/TardigradeRenderEngine && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nathan/projects/c++/TardigradeRenderEngine /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests /home/nathan/projects/c++/TardigradeRenderEngine /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests/CMakeFiles/opacity.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : external/glfw-3.3.2/tests/CMakeFiles/opacity.dir/depend
 

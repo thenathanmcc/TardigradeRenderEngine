@@ -29,6 +29,8 @@ public:
         m_VMID = glGetUniformLocation(shaderProgramID, "V");
     }
 
+    GLuint getShaderID();
+
     void use() {
     	glUseProgram(shaderProgramID);
     }

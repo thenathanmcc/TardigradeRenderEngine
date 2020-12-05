@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nathan/projects/c++/opengl/RenderEngine
+CMAKE_SOURCE_DIR = /home/nathan/projects/c++/TardigradeRenderEngine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nathan/projects/c++/opengl/RenderEngine
+CMAKE_BINARY_DIR = /home/nathan/projects/c++/TardigradeRenderEngine
 
 # Utility rule file for uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/nathan/projects/c++/opengl/RenderEngine
 include external/glfw-3.3.2/CMakeFiles/uninstall.dir/progress.make
 
 external/glfw-3.3.2/CMakeFiles/uninstall:
-	cd /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2 && /usr/bin/cmake -P /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/cmake_uninstall.cmake
+	cd /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2 && /usr/bin/cmake -P /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/cmake_uninstall.cmake
 
 uninstall: external/glfw-3.3.2/CMakeFiles/uninstall
 uninstall: external/glfw-3.3.2/CMakeFiles/uninstall.dir/build.make
@@ -67,10 +67,10 @@ external/glfw-3.3.2/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : external/glfw-3.3.2/CMakeFiles/uninstall.dir/build
 
 external/glfw-3.3.2/CMakeFiles/uninstall.dir/clean:
-	cd /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2 && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2 && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : external/glfw-3.3.2/CMakeFiles/uninstall.dir/clean
 
 external/glfw-3.3.2/CMakeFiles/uninstall.dir/depend:
-	cd /home/nathan/projects/c++/opengl/RenderEngine && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nathan/projects/c++/opengl/RenderEngine /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2 /home/nathan/projects/c++/opengl/RenderEngine /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2 /home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nathan/projects/c++/TardigradeRenderEngine && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nathan/projects/c++/TardigradeRenderEngine /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2 /home/nathan/projects/c++/TardigradeRenderEngine /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2 /home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : external/glfw-3.3.2/CMakeFiles/uninstall.dir/depend
 

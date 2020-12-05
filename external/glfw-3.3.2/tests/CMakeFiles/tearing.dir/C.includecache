@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/deps/glad_gl.c
+/home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/deps/glad_gl.c
 stdio.h
 -
 stdlib.h
@@ -16,7 +16,7 @@ string.h
 glad/gl.h
 -
 
-/home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests/tearing.c
+/home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests/tearing.c
 glad/gl.h
 -
 GLFW/glfw3.h
@@ -28,7 +28,7 @@ stdlib.h
 math.h
 -
 linmath.h
-/home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests/linmath.h
+/home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests/linmath.h
 
 external/glfw-3.3.2/deps/glad/gl.h
 winapifamily.h

@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/deps/glad_gl.c" "/home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests/CMakeFiles/tearing.dir/__/deps/glad_gl.c.o"
-  "/home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests/tearing.c" "/home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/tests/CMakeFiles/tearing.dir/tearing.c.o"
+  "/home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/deps/glad_gl.c" "/home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests/CMakeFiles/tearing.dir/__/deps/glad_gl.c.o"
+  "/home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests/tearing.c" "/home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/tests/CMakeFiles/tearing.dir/tearing.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -17,7 +17,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/nathan/projects/c++/opengl/RenderEngine/external/glfw-3.3.2/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "/home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

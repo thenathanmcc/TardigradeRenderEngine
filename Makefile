@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nathan/projects/c++/opengl/RenderEngine
+CMAKE_SOURCE_DIR = /home/nathan/projects/c++/TardigradeRenderEngine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nathan/projects/c++/opengl/RenderEngine
+CMAKE_BINARY_DIR = /home/nathan/projects/c++/TardigradeRenderEngine
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -115,8 +115,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -126,9 +126,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/projects/c++/opengl/RenderEngine/CMakeFiles /home/nathan/projects/c++/opengl/RenderEngine/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles /home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/projects/c++/opengl/RenderEngine/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -639,6 +639,33 @@ src/Controls.cpp.s:
 	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/Controls.cpp.s
 .PHONY : src/Controls.cpp.s
 
+src/Cube.o: src/Cube.cpp.o
+
+.PHONY : src/Cube.o
+
+# target to build an object file
+src/Cube.cpp.o:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/Cube.cpp.o
+.PHONY : src/Cube.cpp.o
+
+src/Cube.i: src/Cube.cpp.i
+
+.PHONY : src/Cube.i
+
+# target to preprocess a source file
+src/Cube.cpp.i:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/Cube.cpp.i
+.PHONY : src/Cube.cpp.i
+
+src/Cube.s: src/Cube.cpp.s
+
+.PHONY : src/Cube.s
+
+# target to generate assembly for a file
+src/Cube.cpp.s:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/Cube.cpp.s
+.PHONY : src/Cube.cpp.s
+
 src/ObjLoader.o: src/ObjLoader.cpp.o
 
 .PHONY : src/ObjLoader.o
@@ -879,6 +906,9 @@ help:
 	@echo "... src/Controls.o"
 	@echo "... src/Controls.i"
 	@echo "... src/Controls.s"
+	@echo "... src/Cube.o"
+	@echo "... src/Cube.i"
+	@echo "... src/Cube.s"
 	@echo "... src/ObjLoader.o"
 	@echo "... src/ObjLoader.i"
 	@echo "... src/ObjLoader.s"
