@@ -666,6 +666,168 @@ src/Cube.cpp.s:
 	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/Cube.cpp.s
 .PHONY : src/Cube.cpp.s
 
+src/ImGui/imgui.o: src/ImGui/imgui.cpp.o
+
+.PHONY : src/ImGui/imgui.o
+
+# target to build an object file
+src/ImGui/imgui.cpp.o:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/ImGui/imgui.cpp.o
+.PHONY : src/ImGui/imgui.cpp.o
+
+src/ImGui/imgui.i: src/ImGui/imgui.cpp.i
+
+.PHONY : src/ImGui/imgui.i
+
+# target to preprocess a source file
+src/ImGui/imgui.cpp.i:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/ImGui/imgui.cpp.i
+.PHONY : src/ImGui/imgui.cpp.i
+
+src/ImGui/imgui.s: src/ImGui/imgui.cpp.s
+
+.PHONY : src/ImGui/imgui.s
+
+# target to generate assembly for a file
+src/ImGui/imgui.cpp.s:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/ImGui/imgui.cpp.s
+.PHONY : src/ImGui/imgui.cpp.s
+
+src/ImGui/imgui_demo.o: src/ImGui/imgui_demo.cpp.o
+
+.PHONY : src/ImGui/imgui_demo.o
+
+# target to build an object file
+src/ImGui/imgui_demo.cpp.o:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/ImGui/imgui_demo.cpp.o
+.PHONY : src/ImGui/imgui_demo.cpp.o
+
+src/ImGui/imgui_demo.i: src/ImGui/imgui_demo.cpp.i
+
+.PHONY : src/ImGui/imgui_demo.i
+
+# target to preprocess a source file
+src/ImGui/imgui_demo.cpp.i:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/ImGui/imgui_demo.cpp.i
+.PHONY : src/ImGui/imgui_demo.cpp.i
+
+src/ImGui/imgui_demo.s: src/ImGui/imgui_demo.cpp.s
+
+.PHONY : src/ImGui/imgui_demo.s
+
+# target to generate assembly for a file
+src/ImGui/imgui_demo.cpp.s:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/ImGui/imgui_demo.cpp.s
+.PHONY : src/ImGui/imgui_demo.cpp.s
+
+src/ImGui/imgui_draw.o: src/ImGui/imgui_draw.cpp.o
+
+.PHONY : src/ImGui/imgui_draw.o
+
+# target to build an object file
+src/ImGui/imgui_draw.cpp.o:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/ImGui/imgui_draw.cpp.o
+.PHONY : src/ImGui/imgui_draw.cpp.o
+
+src/ImGui/imgui_draw.i: src/ImGui/imgui_draw.cpp.i
+
+.PHONY : src/ImGui/imgui_draw.i
+
+# target to preprocess a source file
+src/ImGui/imgui_draw.cpp.i:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/ImGui/imgui_draw.cpp.i
+.PHONY : src/ImGui/imgui_draw.cpp.i
+
+src/ImGui/imgui_draw.s: src/ImGui/imgui_draw.cpp.s
+
+.PHONY : src/ImGui/imgui_draw.s
+
+# target to generate assembly for a file
+src/ImGui/imgui_draw.cpp.s:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/ImGui/imgui_draw.cpp.s
+.PHONY : src/ImGui/imgui_draw.cpp.s
+
+src/ImGui/imgui_impl_glfw.o: src/ImGui/imgui_impl_glfw.cpp.o
+
+.PHONY : src/ImGui/imgui_impl_glfw.o
+
+# target to build an object file
+src/ImGui/imgui_impl_glfw.cpp.o:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_glfw.cpp.o
+.PHONY : src/ImGui/imgui_impl_glfw.cpp.o
+
+src/ImGui/imgui_impl_glfw.i: src/ImGui/imgui_impl_glfw.cpp.i
+
+.PHONY : src/ImGui/imgui_impl_glfw.i
+
+# target to preprocess a source file
+src/ImGui/imgui_impl_glfw.cpp.i:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_glfw.cpp.i
+.PHONY : src/ImGui/imgui_impl_glfw.cpp.i
+
+src/ImGui/imgui_impl_glfw.s: src/ImGui/imgui_impl_glfw.cpp.s
+
+.PHONY : src/ImGui/imgui_impl_glfw.s
+
+# target to generate assembly for a file
+src/ImGui/imgui_impl_glfw.cpp.s:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_glfw.cpp.s
+.PHONY : src/ImGui/imgui_impl_glfw.cpp.s
+
+src/ImGui/imgui_impl_opengl3.o: src/ImGui/imgui_impl_opengl3.cpp.o
+
+.PHONY : src/ImGui/imgui_impl_opengl3.o
+
+# target to build an object file
+src/ImGui/imgui_impl_opengl3.cpp.o:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_opengl3.cpp.o
+.PHONY : src/ImGui/imgui_impl_opengl3.cpp.o
+
+src/ImGui/imgui_impl_opengl3.i: src/ImGui/imgui_impl_opengl3.cpp.i
+
+.PHONY : src/ImGui/imgui_impl_opengl3.i
+
+# target to preprocess a source file
+src/ImGui/imgui_impl_opengl3.cpp.i:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_opengl3.cpp.i
+.PHONY : src/ImGui/imgui_impl_opengl3.cpp.i
+
+src/ImGui/imgui_impl_opengl3.s: src/ImGui/imgui_impl_opengl3.cpp.s
+
+.PHONY : src/ImGui/imgui_impl_opengl3.s
+
+# target to generate assembly for a file
+src/ImGui/imgui_impl_opengl3.cpp.s:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_opengl3.cpp.s
+.PHONY : src/ImGui/imgui_impl_opengl3.cpp.s
+
+src/ImGui/imgui_widgets.o: src/ImGui/imgui_widgets.cpp.o
+
+.PHONY : src/ImGui/imgui_widgets.o
+
+# target to build an object file
+src/ImGui/imgui_widgets.cpp.o:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/ImGui/imgui_widgets.cpp.o
+.PHONY : src/ImGui/imgui_widgets.cpp.o
+
+src/ImGui/imgui_widgets.i: src/ImGui/imgui_widgets.cpp.i
+
+.PHONY : src/ImGui/imgui_widgets.i
+
+# target to preprocess a source file
+src/ImGui/imgui_widgets.cpp.i:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/ImGui/imgui_widgets.cpp.i
+.PHONY : src/ImGui/imgui_widgets.cpp.i
+
+src/ImGui/imgui_widgets.s: src/ImGui/imgui_widgets.cpp.s
+
+.PHONY : src/ImGui/imgui_widgets.s
+
+# target to generate assembly for a file
+src/ImGui/imgui_widgets.cpp.s:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/ImGui/imgui_widgets.cpp.s
+.PHONY : src/ImGui/imgui_widgets.cpp.s
+
 src/ObjLoader.o: src/ObjLoader.cpp.o
 
 .PHONY : src/ObjLoader.o
@@ -909,6 +1071,24 @@ help:
 	@echo "... src/Cube.o"
 	@echo "... src/Cube.i"
 	@echo "... src/Cube.s"
+	@echo "... src/ImGui/imgui.o"
+	@echo "... src/ImGui/imgui.i"
+	@echo "... src/ImGui/imgui.s"
+	@echo "... src/ImGui/imgui_demo.o"
+	@echo "... src/ImGui/imgui_demo.i"
+	@echo "... src/ImGui/imgui_demo.s"
+	@echo "... src/ImGui/imgui_draw.o"
+	@echo "... src/ImGui/imgui_draw.i"
+	@echo "... src/ImGui/imgui_draw.s"
+	@echo "... src/ImGui/imgui_impl_glfw.o"
+	@echo "... src/ImGui/imgui_impl_glfw.i"
+	@echo "... src/ImGui/imgui_impl_glfw.s"
+	@echo "... src/ImGui/imgui_impl_opengl3.o"
+	@echo "... src/ImGui/imgui_impl_opengl3.i"
+	@echo "... src/ImGui/imgui_impl_opengl3.s"
+	@echo "... src/ImGui/imgui_widgets.o"
+	@echo "... src/ImGui/imgui_widgets.i"
+	@echo "... src/ImGui/imgui_widgets.s"
 	@echo "... src/ObjLoader.o"
 	@echo "... src/ObjLoader.i"
 	@echo "... src/ObjLoader.s"

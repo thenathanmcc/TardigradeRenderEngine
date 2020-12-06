@@ -541,6 +541,44 @@ CMakeFiles/RenderEngine.dir/src/Cube.cpp.o: external/glm/vec3.hpp
 CMakeFiles/RenderEngine.dir/src/Cube.cpp.o: external/glm/vec4.hpp
 CMakeFiles/RenderEngine.dir/src/Cube.cpp.o: external/glm/vector_relational.hpp
 
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui.cpp.o: src/ImGui/imconfig.h
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui.cpp.o: src/ImGui/imgui.cpp
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui.cpp.o: src/ImGui/imgui.h
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui.cpp.o: src/ImGui/imgui_internal.h
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui.cpp.o: src/ImGui/imstb_textedit.h
+
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui_demo.cpp.o: src/ImGui/imconfig.h
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui_demo.cpp.o: src/ImGui/imgui.h
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui_demo.cpp.o: src/ImGui/imgui_demo.cpp
+
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui_draw.cpp.o: src/ImGui/imconfig.h
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui_draw.cpp.o: src/ImGui/imgui.h
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui_draw.cpp.o: src/ImGui/imgui_draw.cpp
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui_draw.cpp.o: src/ImGui/imgui_internal.h
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui_draw.cpp.o: src/ImGui/imstb_rectpack.h
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui_draw.cpp.o: src/ImGui/imstb_textedit.h
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui_draw.cpp.o: src/ImGui/imstb_truetype.h
+
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_glfw.cpp.o: src/ImGui/imconfig.h
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_glfw.cpp.o: src/ImGui/imgui.h
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_glfw.cpp.o: src/ImGui/imgui_impl_glfw.cpp
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_glfw.cpp.o: src/ImGui/imgui_impl_glfw.h
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_glfw.cpp.o: external/glfw-3.3.2/include/GLFW/glfw3.h
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_glfw.cpp.o: external/glfw-3.3.2/include/GLFW/glfw3native.h
+
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_opengl3.cpp.o: src/ImGui/imconfig.h
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_opengl3.cpp.o: src/ImGui/imgui.h
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_opengl3.cpp.o: src/ImGui/imgui_impl_opengl3.cpp
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_opengl3.cpp.o: src/ImGui/imgui_impl_opengl3.h
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_opengl3.cpp.o: external/GLAD/include/KHR/khrplatform.h
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_opengl3.cpp.o: external/GLAD/include/glad/glad.h
+
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui_widgets.cpp.o: src/ImGui/imconfig.h
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui_widgets.cpp.o: src/ImGui/imgui.h
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui_widgets.cpp.o: src/ImGui/imgui_internal.h
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui_widgets.cpp.o: src/ImGui/imgui_widgets.cpp
+CMakeFiles/RenderEngine.dir/src/ImGui/imgui_widgets.cpp.o: src/ImGui/imstb_textedit.h
+
 CMakeFiles/RenderEngine.dir/src/ObjLoader.cpp.o: src/ObjLoader.cpp
 CMakeFiles/RenderEngine.dir/src/ObjLoader.cpp.o: src/ObjLoader.hpp
 CMakeFiles/RenderEngine.dir/src/ObjLoader.cpp.o: external/glm/common.hpp
@@ -1276,6 +1314,10 @@ CMakeFiles/RenderEngine.dir/src/Texture.cpp.o: external/stb_image.h
 CMakeFiles/RenderEngine.dir/src/main.cpp.o: src/Camera.hpp
 CMakeFiles/RenderEngine.dir/src/main.cpp.o: src/Controls.hpp
 CMakeFiles/RenderEngine.dir/src/main.cpp.o: src/Cube.hpp
+CMakeFiles/RenderEngine.dir/src/main.cpp.o: src/ImGui/imconfig.h
+CMakeFiles/RenderEngine.dir/src/main.cpp.o: src/ImGui/imgui.h
+CMakeFiles/RenderEngine.dir/src/main.cpp.o: src/ImGui/imgui_impl_glfw.h
+CMakeFiles/RenderEngine.dir/src/main.cpp.o: src/ImGui/imgui_impl_opengl3.h
 CMakeFiles/RenderEngine.dir/src/main.cpp.o: src/Object.hpp
 CMakeFiles/RenderEngine.dir/src/main.cpp.o: src/Scene.hpp
 CMakeFiles/RenderEngine.dir/src/main.cpp.o: src/Texture.hpp

@@ -35,6 +35,8 @@ add_executable(RenderEngine
     src/ImGui/imgui_demo.cpp
     src/ImGui/imgui_draw.cpp
     src/ImGui/imgui_widgets.cpp
+    src/ImGui/imgui_impl_glfw.cpp
+    src/ImGui/imgui_impl_opengl3.cpp
 )
 
 target_link_libraries(RenderEngine PRIVATE glad glfw ${GLFW_LIBRARIES})

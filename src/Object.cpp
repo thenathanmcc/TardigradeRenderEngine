@@ -7,7 +7,6 @@
 #include <iostream>
 
 Object::Object() {
-	std::cout << "Object() called" << std::endl;
 	m_rotationMatrix = glm::mat4(1.0f);
 	m_translationMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, 0.0f));
 	m_scaleMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, 1.0f));
@@ -25,7 +24,6 @@ void Object::setObjectShader(Shader* shader) {
 }
 
 glm::mat4 Object::getTransformMatrix() {
-	std::cout << "Object::getTransformMatrix() called" << std::endl;
 	return m_transformMatrix;
 }
 

@@ -36,5 +36,11 @@ private:
 	float m_pitchAngle;			// Rotation angle around the x-axis
 	float m_yawAngle;			// Rotation angle around the y-axis
 
+	bool m_mouseFocus;			// Should track mouse
+	double m_xcoord;			// Cursor x-coordinate
+	double m_ycoord;			// Cursor y-coordinate
+
+	int m_windowWidth;			// Width of window
+	int m_windowHeight;			// Height of window
 };
 #endif

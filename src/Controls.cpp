@@ -23,27 +23,30 @@ Controls::Controls(Camera* camera) {
 
 	m_pitchAngle = 0.0f;
 	m_yawAngle = 3.14f;
+
+	m_mouseFocus = true;
 }
 
 
 
 void Controls::checkUserInputs(GLFWwindow* window) {
-
 	static double lastTime = glfwGetTime();
 
 	double currentTime = glfwGetTime();
 	float deltaTime = float(currentTime - lastTime);
 
-	// Get mouse coordinates
-	double xcoord, ycoord;
-	glfwGetCursorPos(window, &xcoord, &ycoord);
+	glfwGetWindowSize(window, &m_windowWidth, &m_windowHeight);
 
-	// Reset mouse position for next frame
-	glfwSetCursorPos(window, 1280/2, 720/2);
+	// Get mouse coordinates
+	if (m_mouseFocus) {
+		glfwGetCursorPos(window, &m_xcoord, &m_ycoord);
+		// Reset mouse position for next frame
+		glfwSetCursorPos(window, m_windowWidth/2, m_windowHeight/2);
+	}
 
 	// Compute new orientation
-	m_pitchAngle += m_rotateSpeed * float(720/2 - ycoord);
-	m_yawAngle   += m_rotateSpeed * float(1280/2 - xcoord);
+	m_pitchAngle += m_rotateSpeed * float(m_windowHeight/2 - m_ycoord);
+	m_yawAngle   += m_rotateSpeed * float(m_windowWidth/2 - m_xcoord);
 
 
 	// Convert Spherical ccoordinates to cartesian coordinates
@@ -80,7 +83,17 @@ void Controls::checkUserInputs(GLFWwindow* window) {
 	}
 
 	if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
+		m_mouseFocus = false;
+		glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
+	}
+
+	if (glfwGetKey(window, GLFW_KEY_Q) == GLFW_PRESS) {
 		glfwSetWindowShouldClose(window, true);
+	}
+
+	if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS) {
+		m_mouseFocus = true;
+		glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 	}
 
 
