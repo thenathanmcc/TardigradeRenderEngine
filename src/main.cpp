@@ -57,14 +57,18 @@ int main() {
     Shader* myShader = new Shader("src/shaders/vertex.shader", "src/shaders/fragment.shader");
 
     Scene* scene = new Scene();
-    Cube* cube = new Cube();
-    cube->setObjectShader(myShader);
-    scene->addObject(cube);
+    Cube* cube1 = new Cube("src/textures/wooden_container.jpg");
+    Cube* cube2 = new Cube("src/textures/wooden_container.jpg");
+    cube1->setTranslationMatrix(glm::vec3(0.0, 3.0, 0.0));
+    cube2->setTranslationMatrix(glm::vec3(3.0, 0.0, 0.0));
+    cube1->setObjectShader(myShader);
+    cube2->setObjectShader(myShader);
+    scene->addObject(cube1);
+    scene->addObject(cube2);
     
     
     Camera* camera = new Camera();
-    //camera->setCameraPosition(glm::vec3(0, 100, 200));
-    //std::cout << "Camera's Position: " << camera->getPosition().x << ", " << camera->getPosition().y << ", " << camera->getPosition().z << std::endl;
+    camera->setCameraPosition(glm::vec3(0, 0, 5));
     camera->setCameraTarget(glm::vec3(0, 0, 0));
     Controls* controls = new Controls(camera);
     controls->setCameraMovementSpeed(3);
@@ -73,9 +77,6 @@ int main() {
 
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
-
-        //std::cout << "Camera's Position: " << camera->getPosition().x << ", " << camera->getPosition().y << ", " << camera->getPosition().z << std::endl;
 
         controls->checkUserInputs(window);
         scene->render(camera);

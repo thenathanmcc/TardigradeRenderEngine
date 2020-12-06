@@ -25,6 +25,11 @@ GLuint Texture::getTextureID(){
 	return m_textureID;
 }
 
+void Texture::bindTexture() {
+	glActiveTexture(GL_TEXTURE0);
+	glBindTexture(GL_TEXTURE_2D, m_textureID);
+}
+
 GLuint Texture::loadTexture(const std::string textureFilePath) {
 	unsigned int textureID;
 

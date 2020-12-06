@@ -16,11 +16,14 @@
 #include <glm/gtx/norm.hpp>
 
 #include "Object.hpp"
+#include "Texture.hpp"
 
 class Cube: public Object {
 public:
 
 	Cube();
+
+	Cube(std::string textureFilePath);
 
 	~Cube();
 
@@ -28,9 +31,13 @@ public:
 
 	void render(Camera* camera);
 
+	void printMat4(glm::mat4 mat);
+
 private:
 
-	GLfloat m_vertex_buffer_data[18 * 6];
+	GLfloat m_vertex_buffer_data[30 * 6]; // 30 vertices per plane
 	GLuint m_vertexBuffer;
+	Texture* m_texture;
+	GLuint m_textureID;
 };
 #endif

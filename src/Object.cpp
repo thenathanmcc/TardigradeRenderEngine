@@ -4,12 +4,13 @@
  */
 
 #include "Object.hpp"
-
+#include <iostream>
 
 Object::Object() {
+	std::cout << "Object() called" << std::endl;
 	m_rotationMatrix = glm::mat4(1.0f);
-	m_translationMatrix = glm::translate(glm::mat4(), glm::vec3(0.0f, 0.0f, 0.0f));
-	m_scaleMatrix = glm::scale(glm::mat4(), glm::vec3(1.0f, 1.0f, 1.0f));
+	m_translationMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, 0.0f));
+	m_scaleMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, 1.0f));
 	m_transformMatrix = m_translationMatrix * m_rotationMatrix * m_scaleMatrix;
 
 	m_shader = NULL;
@@ -24,6 +25,7 @@ void Object::setObjectShader(Shader* shader) {
 }
 
 glm::mat4 Object::getTransformMatrix() {
+	std::cout << "Object::getTransformMatrix() called" << std::endl;
 	return m_transformMatrix;
 }
 
@@ -33,19 +35,21 @@ void Object::addTransformMatrix(glm::mat4 mat) {
 
 void Object::setTranslationMatrix(glm::mat4 mat) {
 	m_translationMatrix = mat;
+	m_translationMatrix = m_translationMatrix * m_rotationMatrix * m_scaleMatrix;
 }
 
 void Object::setTranslationMatrix(glm::vec3 translationVector) {
-	m_translationMatrix = glm::translate(glm::mat4(), translationVector);
+	m_translationMatrix = glm::translate(glm::mat4(1.0f), translationVector);
 	m_transformMatrix = m_translationMatrix * m_rotationMatrix * m_scaleMatrix;
 }
 
 void Object::setScaleMatrix(glm::mat4 mat) {
 	m_scaleMatrix = mat;
+	m_transformMatrix = m_translationMatrix * m_rotationMatrix * m_scaleMatrix;
 }
 
 void Object::setScaleMatrix(float scale) {
-	m_scaleMatrix = glm::scale(glm::mat4(), glm::vec3(scale));
+	m_scaleMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(scale));
 	m_transformMatrix = m_translationMatrix * m_rotationMatrix * m_scaleMatrix;
 }
 
