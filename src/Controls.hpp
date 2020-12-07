@@ -27,6 +27,9 @@ public:
 	/* Set Camera rotating speed */
 	void setCameraRotatingSpeed(float speed);
 
+	/* Takes the current frame and writes it out to an image file*/
+	void takeScreenshot(GLFWwindow* window);
+
 private:
 
 	Camera* m_camera;			// Need camera reference
@@ -42,5 +45,8 @@ private:
 
 	int m_windowWidth;			// Width of window
 	int m_windowHeight;			// Height of window
+
+
+	int m_screenshotCount;
 };
 #endif

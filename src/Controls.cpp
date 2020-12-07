@@ -3,12 +3,15 @@
  * @author Nathan McCulloch
  */
 
+#define STB_IMAGE_WRITE_IMPLEMENTATION
 
-
+#include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <iostream>
+#include "stb_image.h"
+#include "stb_image_write.h"
 
 using namespace glm;
 
@@ -25,6 +28,8 @@ Controls::Controls(Camera* camera) {
 	m_yawAngle = 3.14f;
 
 	m_mouseFocus = true;
+
+	m_screenshotCount = 0;
 }
 
 
@@ -96,6 +101,11 @@ void Controls::checkUserInputs(GLFWwindow* window) {
 		glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 	}
 
+	if (glfwGetKey(window, GLFW_KEY_LEFT_SHIFT) == GLFW_PRESS && glfwGetKey(window, GLFW_KEY_P) == GLFW_PRESS) {
+		std::cout << "Screenshot" << std::endl;
+		takeScreenshot(window);
+	}
+
 
 	m_camera->setCameraTarget(position, position + direction, up);
 	lastTime = currentTime;
@@ -107,4 +117,17 @@ void Controls::setCameraMovementSpeed(float speed) {
 
 void Controls::setCameraRotatingSpeed(float speed) {
 	m_rotateSpeed = speed;
+}
+
+void Controls::takeScreenshot(GLFWwindow* window) {
+
+	char *data = (char*) malloc((size_t) (m_windowWidth * m_windowHeight * 3)); // 3 components (R, G, B)
+
+    glPixelStorei(GL_PACK_ALIGNMENT, 1);
+    glReadPixels(0, 0, m_windowWidth, m_windowHeight, GL_RGB, GL_UNSIGNED_BYTE, data);
+
+    int saved = stbi_write_png("screenshot.png", m_windowWidth, m_windowHeight, 3, data, 0);
+
+    free(data);
+
 }

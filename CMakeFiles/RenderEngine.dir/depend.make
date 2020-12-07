@@ -169,6 +169,8 @@ CMakeFiles/RenderEngine.dir/src/Camera.cpp.o: external/glm/vector_relational.hpp
 CMakeFiles/RenderEngine.dir/src/Controls.cpp.o: src/Camera.hpp
 CMakeFiles/RenderEngine.dir/src/Controls.cpp.o: src/Controls.cpp
 CMakeFiles/RenderEngine.dir/src/Controls.cpp.o: src/Controls.hpp
+CMakeFiles/RenderEngine.dir/src/Controls.cpp.o: external/GLAD/include/KHR/khrplatform.h
+CMakeFiles/RenderEngine.dir/src/Controls.cpp.o: external/GLAD/include/glad/glad.h
 CMakeFiles/RenderEngine.dir/src/Controls.cpp.o: external/glfw-3.3.2/include/GLFW/glfw3.h
 CMakeFiles/RenderEngine.dir/src/Controls.cpp.o: external/glm/common.hpp
 CMakeFiles/RenderEngine.dir/src/Controls.cpp.o: external/glm/detail/_fixes.hpp
@@ -332,6 +334,8 @@ CMakeFiles/RenderEngine.dir/src/Controls.cpp.o: external/glm/vec2.hpp
 CMakeFiles/RenderEngine.dir/src/Controls.cpp.o: external/glm/vec3.hpp
 CMakeFiles/RenderEngine.dir/src/Controls.cpp.o: external/glm/vec4.hpp
 CMakeFiles/RenderEngine.dir/src/Controls.cpp.o: external/glm/vector_relational.hpp
+CMakeFiles/RenderEngine.dir/src/Controls.cpp.o: external/stb_image.h
+CMakeFiles/RenderEngine.dir/src/Controls.cpp.o: external/stb_image_write.h
 
 CMakeFiles/RenderEngine.dir/src/Cube.cpp.o: src/Camera.hpp
 CMakeFiles/RenderEngine.dir/src/Cube.cpp.o: src/Cube.cpp

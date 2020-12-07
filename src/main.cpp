@@ -25,8 +25,8 @@
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow *window);
 
-const unsigned int WINDOW_WIDTH = 2560;
-const unsigned int WINDOW_HEIGHT = 1440;
+const unsigned int WINDOW_WIDTH = 1280;
+const unsigned int WINDOW_HEIGHT = 720;
 const char* glsl_version = "#version 130";
 const char* gpu_info;
 

@@ -41,4 +41,4 @@ add_executable(RenderEngine
 
 target_link_libraries(RenderEngine PRIVATE glad glfw ${GLFW_LIBRARIES})
 
-SET(CMAKE_CXX_FLAGS " -lGL -lX11 -lpthread -ldl")
+SET(CMAKE_CXX_FLAGS " -lGL -lX11 -lpthread -ldl -opengl32")

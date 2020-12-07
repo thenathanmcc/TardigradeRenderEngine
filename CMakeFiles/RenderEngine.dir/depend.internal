@@ -170,6 +170,8 @@ CMakeFiles/RenderEngine.dir/src/Controls.cpp.o
  /home/nathan/projects/c++/TardigradeRenderEngine/src/Camera.hpp
  /home/nathan/projects/c++/TardigradeRenderEngine/src/Controls.cpp
  /home/nathan/projects/c++/TardigradeRenderEngine/src/Controls.hpp
+ external/GLAD/include/KHR/khrplatform.h
+ external/GLAD/include/glad/glad.h
  external/glfw-3.3.2/include/GLFW/glfw3.h
  external/glm/common.hpp
  external/glm/detail/_fixes.hpp
@@ -333,6 +335,8 @@ CMakeFiles/RenderEngine.dir/src/Controls.cpp.o
  external/glm/vec3.hpp
  external/glm/vec4.hpp
  external/glm/vector_relational.hpp
+ external/stb_image.h
+ external/stb_image_write.h
 CMakeFiles/RenderEngine.dir/src/Cube.cpp.o
  /home/nathan/projects/c++/TardigradeRenderEngine/src/Camera.hpp
  /home/nathan/projects/c++/TardigradeRenderEngine/src/Cube.cpp
