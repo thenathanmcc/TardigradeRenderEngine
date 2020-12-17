@@ -29,7 +29,7 @@ public:
 		delete m_shader;
 	}
 
-	void setObjectShader(Shader* shader);
+	void setShader(Shader* shader);
 
 	glm::mat4 getTransformMatrix();
 

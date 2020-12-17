@@ -16,6 +16,8 @@
 #include "Controls.hpp"
 #include "Scene.hpp"
 #include "Cube.hpp"
+#include "ObjLoader.hpp"
+#include "Group.hpp"
 #include "ImGui/imgui.h"
 #include "ImGui/imgui_impl_glfw.h"
 #include "ImGui/imgui_impl_opengl3.h"
@@ -76,22 +78,41 @@ int main() {
 
     Shader* myShader = new Shader("src/shaders/vertex.shader", "src/shaders/fragment.shader");
 
+    ObjLoader* objLoader = new ObjLoader();
+    Group* monkey = new Group();
+    bool res = objLoader->loadOBJMTL("src/models/monkey.obj", monkey);
+    monkey->init();
+
     Scene* scene = new Scene();
-    Cube* cube1 = new Cube("src/textures/wooden_container.jpg");
+    /*Cube* cube1 = new Cube("src/textures/wooden_container.jpg");
     Cube* cube2 = new Cube("src/textures/wooden_container.jpg");
+    Cube* cube3 = new Cube("src/textures/wooden_container.jpg");
+    Cube* cube4 = new Cube("src/textures/wooden_container.jpg");
+    Cube* cube5 = new Cube("src/textures/wooden_container.jpg");
     cube1->setTranslationMatrix(glm::vec3(0.0, 3.0, 0.0));
     cube2->setTranslationMatrix(glm::vec3(3.0, 0.0, 0.0));
-    cube1->setObjectShader(myShader);
-    cube2->setObjectShader(myShader);
+    cube3->setTranslationMatrix(glm::vec3(3.0, 3.0, 0.0));
+    cube4->setTranslationMatrix(glm::vec3(-3.0, 0.0, 0.0));
+    cube5->setTranslationMatrix(glm::vec3(0.0, 0.0, 0.0));
+    cube1->setShader(myShader);
+    cube2->setShader(myShader);
+    cube3->setShader(myShader);
+    cube4->setShader(myShader);
+    cube5->setShader(myShader);
     scene->addObject(cube1);
     scene->addObject(cube2);
+    scene->addObject(cube3);
+    scene->addObject(cube4);
+    scene->addObject(cube5);*/
+    monkey->setScaleMatrix(0.001f);
+    scene->addObject(monkey);
     
     
     Camera* camera = new Camera();
-    camera->setCameraPosition(glm::vec3(0, 0, -5));
-    camera->setCameraTarget(glm::vec3(0, 3, 0));
+    camera->setCameraPosition(glm::vec3(0, 0, -10));
+    camera->setCameraTarget(glm::vec3(0, 0, 0));
     Controls* controls = new Controls(camera);
-    controls->setCameraMovementSpeed(3);
+    controls->setCameraMovementSpeed(30);
 
 
     while (!glfwWindowShouldClose(window)) {
@@ -110,7 +131,7 @@ int main() {
         ImGui::Text(gpu_info);
         //ImGui::EndMenuBar();
 
-        ImGui::Text("Avg Frame Draw time: \n %.3f ms/frame (%.1f FPS)", 1000.0f / ImGui::GetIO().Framerate, ImGui::GetIO().Framerate);
+        ImGui::Text("Frame Draw time(avg): \n %.3f ms/frame (%.1f FPS)", 1000.0f / ImGui::GetIO().Framerate, ImGui::GetIO().Framerate);
         ImGui::End();
 
 

@@ -16,7 +16,7 @@ Object::Object() {
 }
 
 
-void Object::setObjectShader(Shader* shader) {
+void Object::setShader(Shader* shader) {
 	if (m_shader != NULL)
 		delete m_shader;
 

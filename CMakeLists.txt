@@ -11,12 +11,19 @@ project(RenderEngine)
 
 add_subdirectory(external/glfw-3.3.2)
 add_subdirectory(external/GLAD)
+add_subdirectory(external/assimp)
 
 include_directories(
     external/glfw-3.3.2/include
     external/GLAD/include
     external/
     ${CMAKE_SOURCE_DIR}/src/
+    ${CMAKE_SOURCE_DIR}/src/Assimp/
+)
+
+link_directories(
+    ${Assimp_BINARY_DIR}
+    ${Assimp_BINARY_DIR}/lib
 )
 
 
@@ -31,6 +38,9 @@ add_executable(RenderEngine
     src/ObjLoader.cpp
     src/Object.cpp
     src/Cube.cpp
+    src/Mesh.cpp
+    src/Material.cpp
+    src/Group.cpp
     src/ImGui/imgui.cpp
     src/ImGui/imgui_demo.cpp
     src/ImGui/imgui_draw.cpp
@@ -39,6 +49,6 @@ add_executable(RenderEngine
     src/ImGui/imgui_impl_opengl3.cpp
 )
 
-target_link_libraries(RenderEngine PRIVATE glad glfw ${GLFW_LIBRARIES})
+target_link_libraries(RenderEngine PRIVATE glad glfw ${GLFW_LIBRARIES} assimp)
 
 SET(CMAKE_CXX_FLAGS " -lGL -lX11 -lpthread -ldl -opengl32")

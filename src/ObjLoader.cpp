@@ -11,6 +11,10 @@
 #include <string>
 #include <cstring>
 
+#include <assimp/Importer.hpp>
+#include <assimp/scene.h>
+#include <assimp/postprocess.h> 
+
 ObjLoader::ObjLoader() {
 
 }
@@ -32,12 +36,12 @@ bool ObjLoader::loadOBJ(
 
 	FILE * file = fopen(path, "r");
 	if( file == NULL ){
-		printf("Impossible to open the file ! Are you in the right path ? See Tutorial 1 for details\n");
+		printf("Impossible to open the file.\n");
 		getchar();
 		return false;
 	}
 
-	while( 1 ){
+	while(1){
 
 		char lineHeader[128];
 		// read the first word of the line
@@ -65,7 +69,7 @@ bool ObjLoader::loadOBJ(
 			unsigned int vertexIndex[3], uvIndex[3], normalIndex[3];
 			int matches = fscanf(file, "%d/%d/%d %d/%d/%d %d/%d/%d\n", &vertexIndex[0], &uvIndex[0], &normalIndex[0], &vertexIndex[1], &uvIndex[1], &normalIndex[1], &vertexIndex[2], &uvIndex[2], &normalIndex[2] );
 			if (matches != 9){
-				printf("File can't be read by our simple parser :-( Try exporting with other options\n");
+				printf("File can't be read by the simple parser\n");
 				fclose(file);
 				return false;
 			}
@@ -79,7 +83,6 @@ bool ObjLoader::loadOBJ(
 			normalIndices.push_back(normalIndex[1]);
 			normalIndices.push_back(normalIndex[2]);
 		}else{
-			// Probably a comment, eat up the rest of the line
 			char stupidBuffer[1000];
 			fgets(stupidBuffer, 1000, file);
 		}
@@ -106,5 +109,100 @@ bool ObjLoader::loadOBJ(
 	
 	}
 	fclose(file);
+	return true;
+}
+
+
+bool ObjLoader::loadOBJMTL( const char * path, Group * outputMesh ) {
+	Assimp::Importer importer;
+
+	const aiScene* scene = importer.ReadFile(path, 0);
+
+	if (!scene) {
+		std::cout << importer.GetErrorString() << std::endl;
+		return false;
+	}
+
+	if (scene->mNumMeshes > 0) {
+		int meshIndex = 0;
+
+		while (meshIndex < scene->mNumMeshes) {
+			std::vector<unsigned short> indices;
+			std::vector<glm::vec3> indexed_vertices;
+			std::vector<glm::vec2> indexed_uvs;
+			std::vector<glm::vec3> indexed_normals;
+
+			aiMesh* mesh = scene->mMeshes[meshIndex];
+
+			indexed_vertices.reserve(mesh->mNumVertices);
+			for (unsigned int i = 0; i < mesh->mNumVertices; i++) {
+				aiVector3D pos = mesh->mVertices[i];
+				indexed_vertices.push_back(glm::vec3(pos.x, pos.y, pos.z));
+			}
+
+			indexed_uvs.reserve(mesh->mNumVertices);
+			for (unsigned int i = 0; i < mesh->mNumVertices; i++) {
+				if (mesh->mTextureCoords[0] != NULL) {
+					aiVector3D UVW = mesh-> mTextureCoords[0][i];
+					indexed_uvs.push_back(glm::vec2(UVW.x, UVW.y));
+				}
+			}
+
+			indexed_normals.reserve(mesh->mNumVertices);
+			for (unsigned int i = 0; i < mesh->mNumVertices; i++) {
+				aiVector3D n = mesh->mNormals[i];
+				indexed_normals.push_back(glm::vec3(n.x, n.y, n.z));
+			}
+
+			indices.reserve(mesh->mNumFaces);
+			for (unsigned int i = 0; i < mesh->mNumFaces; i++) {
+				indices.push_back(mesh->mFaces[i].mIndices[0]);
+				indices.push_back(mesh->mFaces[i].mIndices[1]);
+				indices.push_back(mesh->mFaces[i].mIndices[2]);
+			}
+
+
+			Mesh* geom = new Mesh();
+			geom->setVertices(indexed_vertices);
+			geom->setUVs(indexed_uvs);
+			geom->setNormals(indexed_normals);
+			geom->setIndices(indices);
+			geom->setMaterialIndex(mesh->mMaterialIndex);
+
+			outputMesh->addMesh(geom);
+			meshIndex++;
+		}
+	}
+
+	if (scene->mNumMaterials > 0) {
+		Material* material;
+		int materialIndex = 0;
+		while (materialIndex < scene->mNumMaterials) {
+			if (scene-> mMaterials[materialIndex] != NULL) {
+				material = new Material();
+				aiColor3D color (0.0f, 0.0f, 0.0f);
+				aiString texPath;
+				float opacity;
+				scene->mMaterials[materialIndex]->Get(AI_MATKEY_COLOR_DIFFUSE, color);
+				material->setDiffuseColour(glm::vec3(color[0], color[1], color[2]));
+
+				scene->mMaterials[materialIndex]->Get(AI_MATKEY_COLOR_AMBIENT, color);
+				material->setAmbientColour(glm::vec3(color[0], color[1], color[2]));
+
+				scene->mMaterials[materialIndex]->Get(AI_MATKEY_COLOR_SPECULAR, color);
+				material->setSpecularColour(glm::vec3(color[0], color[1], color[2]));
+
+				scene->mMaterials[materialIndex]->Get(AI_MATKEY_OPACITY, opacity);
+				material->setOpacity(opacity);
+
+				if (scene->mMaterials[materialIndex]->GetTexture(aiTextureType_DIFFUSE, 0, &texPath, NULL, NULL, NULL, NULL, NULL) == AI_SUCCESS) {
+					material->setTextureName(texPath.data);
+				}
+				outputMesh->addMaterial(material);
+			}
+			materialIndex++;
+		}
+	}
+
 	return true;
 }

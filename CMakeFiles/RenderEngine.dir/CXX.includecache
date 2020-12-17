@@ -34,6 +34,16 @@ Object.hpp
 Texture.hpp
 /home/nathan/projects/c++/TardigradeRenderEngine/src/Texture.hpp
 
+/home/nathan/projects/c++/TardigradeRenderEngine/src/Group.hpp
+Object.hpp
+/home/nathan/projects/c++/TardigradeRenderEngine/src/Object.hpp
+Texture.hpp
+/home/nathan/projects/c++/TardigradeRenderEngine/src/Texture.hpp
+Mesh.hpp
+/home/nathan/projects/c++/TardigradeRenderEngine/src/Mesh.hpp
+Material.hpp
+/home/nathan/projects/c++/TardigradeRenderEngine/src/Material.hpp
+
 /home/nathan/projects/c++/TardigradeRenderEngine/src/ImGui/imconfig.h
 
 /home/nathan/projects/c++/TardigradeRenderEngine/src/ImGui/imgui.h
@@ -64,6 +74,28 @@ imgui.h
 TargetConditionals.h
 /home/nathan/projects/c++/TardigradeRenderEngine/src/ImGui/TargetConditionals.h
 
+/home/nathan/projects/c++/TardigradeRenderEngine/src/Material.hpp
+Texture.hpp
+/home/nathan/projects/c++/TardigradeRenderEngine/src/Texture.hpp
+Shader.hpp
+/home/nathan/projects/c++/TardigradeRenderEngine/src/Shader.hpp
+glm/glm.hpp
+-
+
+/home/nathan/projects/c++/TardigradeRenderEngine/src/Mesh.hpp
+Object.hpp
+/home/nathan/projects/c++/TardigradeRenderEngine/src/Object.hpp
+vector
+-
+
+/home/nathan/projects/c++/TardigradeRenderEngine/src/ObjLoader.hpp
+glm/glm.hpp
+-
+vector
+-
+Group.hpp
+/home/nathan/projects/c++/TardigradeRenderEngine/src/Group.hpp
+
 /home/nathan/projects/c++/TardigradeRenderEngine/src/Object.hpp
 glm/glm.hpp
 -
@@ -92,8 +124,6 @@ Object.hpp
 Camera.hpp
 /home/nathan/projects/c++/TardigradeRenderEngine/src/Camera.hpp
 
-/home/nathan/projects/c++/TardigradeRenderEngine/src/Texture.hpp
-
 /home/nathan/projects/c++/TardigradeRenderEngine/src/main.cpp
 glad/glad.h
 -
@@ -119,6 +149,10 @@ Scene.hpp
 /home/nathan/projects/c++/TardigradeRenderEngine/src/Scene.hpp
 Cube.hpp
 /home/nathan/projects/c++/TardigradeRenderEngine/src/Cube.hpp
+ObjLoader.hpp
+/home/nathan/projects/c++/TardigradeRenderEngine/src/ObjLoader.hpp
+Group.hpp
+/home/nathan/projects/c++/TardigradeRenderEngine/src/Group.hpp
 ImGui/imgui.h
 /home/nathan/projects/c++/TardigradeRenderEngine/src/ImGui/imgui.h
 ImGui/imgui_impl_glfw.h
@@ -1701,8 +1735,20 @@ arm_neon.h
 src/Shader.hpp
 string
 -
+Texture.hpp
+src/Texture.hpp
 glad/glad.h
 -
 glm/glm.hpp
+-
+
+src/Texture.hpp
+glad/glad.h
+-
+stdio.h
+-
+stdlib.h
+-
+string
 -
 

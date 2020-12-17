@@ -6,5 +6,5 @@ CXX_FLAGS =  -lGL -lX11 -lpthread -ldl -opengl32   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/include -I/home/nathan/projects/c++/TardigradeRenderEngine/external/GLAD/include -I/home/nathan/projects/c++/TardigradeRenderEngine/external -I/home/nathan/projects/c++/TardigradeRenderEngine/src 
+CXX_INCLUDES = -I/home/nathan/projects/c++/TardigradeRenderEngine/external/glfw-3.3.2/include -I/home/nathan/projects/c++/TardigradeRenderEngine/external/GLAD/include -I/home/nathan/projects/c++/TardigradeRenderEngine/external -I/home/nathan/projects/c++/TardigradeRenderEngine/src -I/home/nathan/projects/c++/TardigradeRenderEngine/src/Assimp -I/home/nathan/projects/c++/TardigradeRenderEngine/external/assimp/code/../include 
 

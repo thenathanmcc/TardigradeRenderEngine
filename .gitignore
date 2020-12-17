@@ -1,3 +1,7 @@
 CMakeCache.txt
 RenderEngine
 Makefile
+external/assimp/
+bin/assimp
+bin/unit
+lib/libassimp.a

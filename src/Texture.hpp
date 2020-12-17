@@ -7,6 +7,11 @@
 #ifndef TEXTURE_HPP
 #define TEXTURE_HPP
 
+#include <glad/glad.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string>
+
 class Texture {
 public:
 

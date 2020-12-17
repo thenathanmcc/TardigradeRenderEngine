@@ -94,7 +94,7 @@ install/fast: preinstall/fast
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"assimp-bin\" \"assimp-dev\" \"libassimp5.0.0-dev\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -585,6 +585,58 @@ glad/fast:
 	$(MAKE) -f external/GLAD/CMakeFiles/glad.dir/build.make external/GLAD/CMakeFiles/glad.dir/build
 .PHONY : glad/fast
 
+#=============================================================================
+# Target rules for targets named IrrXML
+
+# Build rule for target.
+IrrXML: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 IrrXML
+.PHONY : IrrXML
+
+# fast build rule for target.
+IrrXML/fast:
+	$(MAKE) -f external/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/build.make external/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/build
+.PHONY : IrrXML/fast
+
+#=============================================================================
+# Target rules for targets named assimp
+
+# Build rule for target.
+assimp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 assimp
+.PHONY : assimp
+
+# fast build rule for target.
+assimp/fast:
+	$(MAKE) -f external/assimp/code/CMakeFiles/assimp.dir/build.make external/assimp/code/CMakeFiles/assimp.dir/build
+.PHONY : assimp/fast
+
+#=============================================================================
+# Target rules for targets named assimp_cmd
+
+# Build rule for target.
+assimp_cmd: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 assimp_cmd
+.PHONY : assimp_cmd
+
+# fast build rule for target.
+assimp_cmd/fast:
+	$(MAKE) -f external/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make external/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build
+.PHONY : assimp_cmd/fast
+
+#=============================================================================
+# Target rules for targets named unit
+
+# Build rule for target.
+unit: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 unit
+.PHONY : unit
+
+# fast build rule for target.
+unit/fast:
+	$(MAKE) -f external/assimp/test/CMakeFiles/unit.dir/build.make external/assimp/test/CMakeFiles/unit.dir/build
+.PHONY : unit/fast
+
 src/Camera.o: src/Camera.cpp.o
 
 .PHONY : src/Camera.o
@@ -665,6 +717,33 @@ src/Cube.s: src/Cube.cpp.s
 src/Cube.cpp.s:
 	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/Cube.cpp.s
 .PHONY : src/Cube.cpp.s
+
+src/Group.o: src/Group.cpp.o
+
+.PHONY : src/Group.o
+
+# target to build an object file
+src/Group.cpp.o:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/Group.cpp.o
+.PHONY : src/Group.cpp.o
+
+src/Group.i: src/Group.cpp.i
+
+.PHONY : src/Group.i
+
+# target to preprocess a source file
+src/Group.cpp.i:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/Group.cpp.i
+.PHONY : src/Group.cpp.i
+
+src/Group.s: src/Group.cpp.s
+
+.PHONY : src/Group.s
+
+# target to generate assembly for a file
+src/Group.cpp.s:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/Group.cpp.s
+.PHONY : src/Group.cpp.s
 
 src/ImGui/imgui.o: src/ImGui/imgui.cpp.o
 
@@ -827,6 +906,60 @@ src/ImGui/imgui_widgets.s: src/ImGui/imgui_widgets.cpp.s
 src/ImGui/imgui_widgets.cpp.s:
 	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/ImGui/imgui_widgets.cpp.s
 .PHONY : src/ImGui/imgui_widgets.cpp.s
+
+src/Material.o: src/Material.cpp.o
+
+.PHONY : src/Material.o
+
+# target to build an object file
+src/Material.cpp.o:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/Material.cpp.o
+.PHONY : src/Material.cpp.o
+
+src/Material.i: src/Material.cpp.i
+
+.PHONY : src/Material.i
+
+# target to preprocess a source file
+src/Material.cpp.i:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/Material.cpp.i
+.PHONY : src/Material.cpp.i
+
+src/Material.s: src/Material.cpp.s
+
+.PHONY : src/Material.s
+
+# target to generate assembly for a file
+src/Material.cpp.s:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/Material.cpp.s
+.PHONY : src/Material.cpp.s
+
+src/Mesh.o: src/Mesh.cpp.o
+
+.PHONY : src/Mesh.o
+
+# target to build an object file
+src/Mesh.cpp.o:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/Mesh.cpp.o
+.PHONY : src/Mesh.cpp.o
+
+src/Mesh.i: src/Mesh.cpp.i
+
+.PHONY : src/Mesh.i
+
+# target to preprocess a source file
+src/Mesh.cpp.i:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/Mesh.cpp.i
+.PHONY : src/Mesh.cpp.i
+
+src/Mesh.s: src/Mesh.cpp.s
+
+.PHONY : src/Mesh.s
+
+# target to generate assembly for a file
+src/Mesh.cpp.s:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/Mesh.cpp.s
+.PHONY : src/Mesh.cpp.s
 
 src/ObjLoader.o: src/ObjLoader.cpp.o
 
@@ -1062,6 +1195,10 @@ help:
 	@echo "... events"
 	@echo "... joysticks"
 	@echo "... glad"
+	@echo "... IrrXML"
+	@echo "... assimp"
+	@echo "... assimp_cmd"
+	@echo "... unit"
 	@echo "... src/Camera.o"
 	@echo "... src/Camera.i"
 	@echo "... src/Camera.s"
@@ -1071,6 +1208,9 @@ help:
 	@echo "... src/Cube.o"
 	@echo "... src/Cube.i"
 	@echo "... src/Cube.s"
+	@echo "... src/Group.o"
+	@echo "... src/Group.i"
+	@echo "... src/Group.s"
 	@echo "... src/ImGui/imgui.o"
 	@echo "... src/ImGui/imgui.i"
 	@echo "... src/ImGui/imgui.s"
@@ -1089,6 +1229,12 @@ help:
 	@echo "... src/ImGui/imgui_widgets.o"
 	@echo "... src/ImGui/imgui_widgets.i"
 	@echo "... src/ImGui/imgui_widgets.s"
+	@echo "... src/Material.o"
+	@echo "... src/Material.i"
+	@echo "... src/Material.s"
+	@echo "... src/Mesh.o"
+	@echo "... src/Mesh.i"
+	@echo "... src/Mesh.s"
 	@echo "... src/ObjLoader.o"
 	@echo "... src/ObjLoader.i"
 	@echo "... src/ObjLoader.s"

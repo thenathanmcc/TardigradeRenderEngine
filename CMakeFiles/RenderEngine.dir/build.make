@@ -187,9 +187,48 @@ CMakeFiles/RenderEngine.dir/src/Cube.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RenderEngine.dir/src/Cube.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nathan/projects/c++/TardigradeRenderEngine/src/Cube.cpp -o CMakeFiles/RenderEngine.dir/src/Cube.cpp.s
 
+CMakeFiles/RenderEngine.dir/src/Mesh.cpp.o: CMakeFiles/RenderEngine.dir/flags.make
+CMakeFiles/RenderEngine.dir/src/Mesh.cpp.o: src/Mesh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/RenderEngine.dir/src/Mesh.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RenderEngine.dir/src/Mesh.cpp.o -c /home/nathan/projects/c++/TardigradeRenderEngine/src/Mesh.cpp
+
+CMakeFiles/RenderEngine.dir/src/Mesh.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RenderEngine.dir/src/Mesh.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nathan/projects/c++/TardigradeRenderEngine/src/Mesh.cpp > CMakeFiles/RenderEngine.dir/src/Mesh.cpp.i
+
+CMakeFiles/RenderEngine.dir/src/Mesh.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RenderEngine.dir/src/Mesh.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nathan/projects/c++/TardigradeRenderEngine/src/Mesh.cpp -o CMakeFiles/RenderEngine.dir/src/Mesh.cpp.s
+
+CMakeFiles/RenderEngine.dir/src/Material.cpp.o: CMakeFiles/RenderEngine.dir/flags.make
+CMakeFiles/RenderEngine.dir/src/Material.cpp.o: src/Material.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/RenderEngine.dir/src/Material.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RenderEngine.dir/src/Material.cpp.o -c /home/nathan/projects/c++/TardigradeRenderEngine/src/Material.cpp
+
+CMakeFiles/RenderEngine.dir/src/Material.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RenderEngine.dir/src/Material.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nathan/projects/c++/TardigradeRenderEngine/src/Material.cpp > CMakeFiles/RenderEngine.dir/src/Material.cpp.i
+
+CMakeFiles/RenderEngine.dir/src/Material.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RenderEngine.dir/src/Material.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nathan/projects/c++/TardigradeRenderEngine/src/Material.cpp -o CMakeFiles/RenderEngine.dir/src/Material.cpp.s
+
+CMakeFiles/RenderEngine.dir/src/Group.cpp.o: CMakeFiles/RenderEngine.dir/flags.make
+CMakeFiles/RenderEngine.dir/src/Group.cpp.o: src/Group.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/RenderEngine.dir/src/Group.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RenderEngine.dir/src/Group.cpp.o -c /home/nathan/projects/c++/TardigradeRenderEngine/src/Group.cpp
+
+CMakeFiles/RenderEngine.dir/src/Group.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RenderEngine.dir/src/Group.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nathan/projects/c++/TardigradeRenderEngine/src/Group.cpp > CMakeFiles/RenderEngine.dir/src/Group.cpp.i
+
+CMakeFiles/RenderEngine.dir/src/Group.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RenderEngine.dir/src/Group.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nathan/projects/c++/TardigradeRenderEngine/src/Group.cpp -o CMakeFiles/RenderEngine.dir/src/Group.cpp.s
+
 CMakeFiles/RenderEngine.dir/src/ImGui/imgui.cpp.o: CMakeFiles/RenderEngine.dir/flags.make
 CMakeFiles/RenderEngine.dir/src/ImGui/imgui.cpp.o: src/ImGui/imgui.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/RenderEngine.dir/src/ImGui/imgui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/RenderEngine.dir/src/ImGui/imgui.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RenderEngine.dir/src/ImGui/imgui.cpp.o -c /home/nathan/projects/c++/TardigradeRenderEngine/src/ImGui/imgui.cpp
 
 CMakeFiles/RenderEngine.dir/src/ImGui/imgui.cpp.i: cmake_force
@@ -202,7 +241,7 @@ CMakeFiles/RenderEngine.dir/src/ImGui/imgui.cpp.s: cmake_force
 
 CMakeFiles/RenderEngine.dir/src/ImGui/imgui_demo.cpp.o: CMakeFiles/RenderEngine.dir/flags.make
 CMakeFiles/RenderEngine.dir/src/ImGui/imgui_demo.cpp.o: src/ImGui/imgui_demo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/RenderEngine.dir/src/ImGui/imgui_demo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/RenderEngine.dir/src/ImGui/imgui_demo.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RenderEngine.dir/src/ImGui/imgui_demo.cpp.o -c /home/nathan/projects/c++/TardigradeRenderEngine/src/ImGui/imgui_demo.cpp
 
 CMakeFiles/RenderEngine.dir/src/ImGui/imgui_demo.cpp.i: cmake_force
@@ -215,7 +254,7 @@ CMakeFiles/RenderEngine.dir/src/ImGui/imgui_demo.cpp.s: cmake_force
 
 CMakeFiles/RenderEngine.dir/src/ImGui/imgui_draw.cpp.o: CMakeFiles/RenderEngine.dir/flags.make
 CMakeFiles/RenderEngine.dir/src/ImGui/imgui_draw.cpp.o: src/ImGui/imgui_draw.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/RenderEngine.dir/src/ImGui/imgui_draw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/RenderEngine.dir/src/ImGui/imgui_draw.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RenderEngine.dir/src/ImGui/imgui_draw.cpp.o -c /home/nathan/projects/c++/TardigradeRenderEngine/src/ImGui/imgui_draw.cpp
 
 CMakeFiles/RenderEngine.dir/src/ImGui/imgui_draw.cpp.i: cmake_force
@@ -228,7 +267,7 @@ CMakeFiles/RenderEngine.dir/src/ImGui/imgui_draw.cpp.s: cmake_force
 
 CMakeFiles/RenderEngine.dir/src/ImGui/imgui_widgets.cpp.o: CMakeFiles/RenderEngine.dir/flags.make
 CMakeFiles/RenderEngine.dir/src/ImGui/imgui_widgets.cpp.o: src/ImGui/imgui_widgets.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/RenderEngine.dir/src/ImGui/imgui_widgets.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/RenderEngine.dir/src/ImGui/imgui_widgets.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RenderEngine.dir/src/ImGui/imgui_widgets.cpp.o -c /home/nathan/projects/c++/TardigradeRenderEngine/src/ImGui/imgui_widgets.cpp
 
 CMakeFiles/RenderEngine.dir/src/ImGui/imgui_widgets.cpp.i: cmake_force
@@ -241,7 +280,7 @@ CMakeFiles/RenderEngine.dir/src/ImGui/imgui_widgets.cpp.s: cmake_force
 
 CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_glfw.cpp.o: CMakeFiles/RenderEngine.dir/flags.make
 CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_glfw.cpp.o: src/ImGui/imgui_impl_glfw.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_glfw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_glfw.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_glfw.cpp.o -c /home/nathan/projects/c++/TardigradeRenderEngine/src/ImGui/imgui_impl_glfw.cpp
 
 CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_glfw.cpp.i: cmake_force
@@ -254,7 +293,7 @@ CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_glfw.cpp.s: cmake_force
 
 CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_opengl3.cpp.o: CMakeFiles/RenderEngine.dir/flags.make
 CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_opengl3.cpp.o: src/ImGui/imgui_impl_opengl3.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_opengl3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_opengl3.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_opengl3.cpp.o -c /home/nathan/projects/c++/TardigradeRenderEngine/src/ImGui/imgui_impl_opengl3.cpp
 
 CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_opengl3.cpp.i: cmake_force
@@ -277,6 +316,9 @@ RenderEngine_OBJECTS = \
 "CMakeFiles/RenderEngine.dir/src/ObjLoader.cpp.o" \
 "CMakeFiles/RenderEngine.dir/src/Object.cpp.o" \
 "CMakeFiles/RenderEngine.dir/src/Cube.cpp.o" \
+"CMakeFiles/RenderEngine.dir/src/Mesh.cpp.o" \
+"CMakeFiles/RenderEngine.dir/src/Material.cpp.o" \
+"CMakeFiles/RenderEngine.dir/src/Group.cpp.o" \
 "CMakeFiles/RenderEngine.dir/src/ImGui/imgui.cpp.o" \
 "CMakeFiles/RenderEngine.dir/src/ImGui/imgui_demo.cpp.o" \
 "CMakeFiles/RenderEngine.dir/src/ImGui/imgui_draw.cpp.o" \
@@ -297,6 +339,9 @@ RenderEngine: CMakeFiles/RenderEngine.dir/src/Scene.cpp.o
 RenderEngine: CMakeFiles/RenderEngine.dir/src/ObjLoader.cpp.o
 RenderEngine: CMakeFiles/RenderEngine.dir/src/Object.cpp.o
 RenderEngine: CMakeFiles/RenderEngine.dir/src/Cube.cpp.o
+RenderEngine: CMakeFiles/RenderEngine.dir/src/Mesh.cpp.o
+RenderEngine: CMakeFiles/RenderEngine.dir/src/Material.cpp.o
+RenderEngine: CMakeFiles/RenderEngine.dir/src/Group.cpp.o
 RenderEngine: CMakeFiles/RenderEngine.dir/src/ImGui/imgui.cpp.o
 RenderEngine: CMakeFiles/RenderEngine.dir/src/ImGui/imgui_demo.cpp.o
 RenderEngine: CMakeFiles/RenderEngine.dir/src/ImGui/imgui_draw.cpp.o
@@ -306,11 +351,14 @@ RenderEngine: CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_opengl3.cpp.o
 RenderEngine: CMakeFiles/RenderEngine.dir/build.make
 RenderEngine: external/GLAD/libglad.a
 RenderEngine: external/glfw-3.3.2/src/libglfw3.a
-RenderEngine: /usr/lib/x86_64-linux-gnu/librt.so
+RenderEngine: lib/libassimp.a
 RenderEngine: /usr/lib/x86_64-linux-gnu/libm.so
 RenderEngine: /usr/lib/x86_64-linux-gnu/libX11.so
+RenderEngine: /usr/lib/x86_64-linux-gnu/libz.so
+RenderEngine: /usr/lib/x86_64-linux-gnu/librt.so
+RenderEngine: lib/libIrrXML.a
 RenderEngine: CMakeFiles/RenderEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable RenderEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable RenderEngine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RenderEngine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

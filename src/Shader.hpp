@@ -9,6 +9,7 @@
 
 
 #include <string>
+#include "Texture.hpp"
 
 #include <glad/glad.h>
 #include <glm/glm.hpp>
@@ -31,9 +32,7 @@ public:
 
     GLuint getShaderID();
 
-    void use() {
-    	glUseProgram(shaderProgramID);
-    }
+    void use();
 
     void loadShaders(std::string vertexShaderFilePath, std::string fragmentShaderFilePath);
 
@@ -57,11 +56,40 @@ public:
 
     void updateMVPMatrix(const glm::mat4 &mat) const;
 
+    void setRenderMode(float renderMode);
+
+    void setTexture(Texture* texture);
+
+    void setupShaderParameters();
+
+    void setDiffuseColour(glm::vec3 colour);
+
+    void setAmbientColour(glm::vec3 colour);
+
+    void setSpecularColour(glm::vec3 colour);
+
+    void setOpacity(float opacity);
+
+    void setLightPosition(glm::vec3 lightPos);
+
 private:
-   GLuint shaderProgramID;  // Shader Program ID
-   GLuint m_MVPID;          // MVP Matrix ID
-   GLuint m_VMID;           // View Matrix ID
-   GLuint m_MMID;           // Model Matrix ID
+    std::string m_shaderName;
+    float m_renderMode;
+
+    glm::vec4 m_diffuseColour;
+    glm::vec4 m_ambientColour;
+    glm::vec4 m_specularColour;
+    float m_opacity;
+
+    Texture* m_texture;
+    GLuint m_textureID;
+    GLuint m_lightPosID;
+    glm::vec3 m_lightPos;
+
+    GLuint shaderProgramID;  // Shader Program ID
+    GLuint m_MVPID;          // MVP Matrix ID
+    GLuint m_VMID;           // View Matrix ID
+    GLuint m_MMID;           // Model Matrix ID
 
  };
  #endif

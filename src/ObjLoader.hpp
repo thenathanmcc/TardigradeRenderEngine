@@ -11,6 +11,7 @@
 
 #include <glm/glm.hpp>
 #include <vector>
+#include "Group.hpp"
 
 class ObjLoader{
 public:
@@ -23,6 +24,8 @@ public:
 		std::vector<glm::vec2> &out_uvs,
 		std::vector<glm::vec3> &out_normals
 	);
+
+	bool loadOBJMTL( const char * path, Group * outputMesh);
 
 };
 #endif
