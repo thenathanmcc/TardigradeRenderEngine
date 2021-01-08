@@ -2,12 +2,14 @@
 
 Simple Render Engine Project. This is a work in progress...
 
+Am learning OpenGL using following the tutorials found at https://learnopengl.com/
 
 ### Screenshots
 ![Cube Render](./screenshots/screenshot1.png)
 
 
 ### Things to do
+- Fix bug in screenshot feature
 - Add cube mapping
 - Add UI to load models
 - Update controls

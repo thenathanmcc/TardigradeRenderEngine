@@ -25,6 +25,7 @@
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow *window);
+unsigned int loadCubeMap(vector<std::string> faces);
 
 const unsigned int WINDOW_WIDTH = 1280;
 const unsigned int WINDOW_HEIGHT = 720;
@@ -77,6 +78,52 @@ int main() {
     glBindVertexArray(VertexArrayID);
 
     Shader* myShader = new Shader("src/shaders/vertex.shader", "src/shaders/fragment.shader");
+    Shader* cubeMapShader = new Shader("src/shaders/cubeMapVertex.shader", "src/shaders/cubeMapFragment.shader");
+
+    float skyboxVertices[] = {
+        // positions          
+        -1.0f,  1.0f, -1.0f,
+        -1.0f, -1.0f, -1.0f,
+         1.0f, -1.0f, -1.0f,
+         1.0f, -1.0f, -1.0f,
+         1.0f,  1.0f, -1.0f,
+        -1.0f,  1.0f, -1.0f,
+
+        -1.0f, -1.0f,  1.0f,
+        -1.0f, -1.0f, -1.0f,
+        -1.0f,  1.0f, -1.0f,
+        -1.0f,  1.0f, -1.0f,
+        -1.0f,  1.0f,  1.0f,
+        -1.0f, -1.0f,  1.0f,
+
+         1.0f, -1.0f, -1.0f,
+         1.0f, -1.0f,  1.0f,
+         1.0f,  1.0f,  1.0f,
+         1.0f,  1.0f,  1.0f,
+         1.0f,  1.0f, -1.0f,
+         1.0f, -1.0f, -1.0f,
+
+        -1.0f, -1.0f,  1.0f,
+        -1.0f,  1.0f,  1.0f,
+         1.0f,  1.0f,  1.0f,
+         1.0f,  1.0f,  1.0f,
+         1.0f, -1.0f,  1.0f,
+        -1.0f, -1.0f,  1.0f,
+
+        -1.0f,  1.0f, -1.0f,
+         1.0f,  1.0f, -1.0f,
+         1.0f,  1.0f,  1.0f,
+         1.0f,  1.0f,  1.0f,
+        -1.0f,  1.0f,  1.0f,
+        -1.0f,  1.0f, -1.0f,
+
+        -1.0f, -1.0f, -1.0f,
+        -1.0f, -1.0f,  1.0f,
+         1.0f, -1.0f, -1.0f,
+         1.0f, -1.0f, -1.0f,
+        -1.0f, -1.0f,  1.0f,
+         1.0f, -1.0f,  1.0f
+    };
 
     ObjLoader* objLoader = new ObjLoader();
     Group* monkey = new Group();
@@ -84,26 +131,6 @@ int main() {
     monkey->init();
 
     Scene* scene = new Scene();
-    /*Cube* cube1 = new Cube("src/textures/wooden_container.jpg");
-    Cube* cube2 = new Cube("src/textures/wooden_container.jpg");
-    Cube* cube3 = new Cube("src/textures/wooden_container.jpg");
-    Cube* cube4 = new Cube("src/textures/wooden_container.jpg");
-    Cube* cube5 = new Cube("src/textures/wooden_container.jpg");
-    cube1->setTranslationMatrix(glm::vec3(0.0, 3.0, 0.0));
-    cube2->setTranslationMatrix(glm::vec3(3.0, 0.0, 0.0));
-    cube3->setTranslationMatrix(glm::vec3(3.0, 3.0, 0.0));
-    cube4->setTranslationMatrix(glm::vec3(-3.0, 0.0, 0.0));
-    cube5->setTranslationMatrix(glm::vec3(0.0, 0.0, 0.0));
-    cube1->setShader(myShader);
-    cube2->setShader(myShader);
-    cube3->setShader(myShader);
-    cube4->setShader(myShader);
-    cube5->setShader(myShader);
-    scene->addObject(cube1);
-    scene->addObject(cube2);
-    scene->addObject(cube3);
-    scene->addObject(cube4);
-    scene->addObject(cube5);*/
     monkey->setScaleMatrix(0.001f);
     scene->addObject(monkey);
     
@@ -114,6 +141,28 @@ int main() {
     Controls* controls = new Controls(camera);
     controls->setCameraMovementSpeed(30);
 
+    vector<std::string> faces {
+        "src/textures/right.jpg",
+        "src/textures/left.jpg",
+        "src/textures/top.jpg",
+        "src/textures/bottom.jpg",
+        "src/textures/front.jpg",
+        "src/textures/back.jpg",
+    }
+
+    unsigned int skyboxVAO, skyboxVBO;
+    glGenVertexArrays(1, &skyboxVAO);
+    glGenBuffers(1, &skyboxVBO);
+    glBindVertexArray(skyboxVBO);
+    glBindBuffer(GL_ARRAY_BUFFER, skyboxVBO);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(skyboxVertices), &skyBoxVertices, GL_STATIC_DRAW);
+    glEnableVertexAttribArray(0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+
+    unsigned int cubeMapTexture = loadCubeMap(faces);
+
+    cubeMapShader->use();
+    cubeMapShader->setInt("skybox", 0);
 
     while (!glfwWindowShouldClose(window)) {
 
@@ -152,4 +201,31 @@ int main() {
 
 void framebuffer_size_callback(GLFWwindow *window, int width, int height) {
     glViewport(0, 0, width, height);
+}
+
+
+unsigned int loadCubeMap(vector<std::string> faces) {
+    unsigned int textureID;
+    glGenTextures(1, &textureID);
+    glBindTexture(GL_TEXTURE_CUBE_MAP, textureID);
+
+    int width, height, nrChannels;
+
+    for (unsigned int i = 0; i < faces.size(); i++) {
+        unsigned char * data = stbi_load(faces[i].c_str(), &width, &height, &nrChannels, 0);
+        if (data) {
+            glTextImage2D(GL_TEXTURE_CUBE_MAP_POSITIVE_X + i, 0, GL_RGB, width, height, 0, GL_RGB, GLUNSIGNED_BYTE, data);
+            stbi_image_free(data);
+        } else {
+            std::cout << "ERROR::FAILED_TO_LOAD_CUBEMAP_TEXTURE" << faces[i] << "\n" << std::endl;
+            stbi_image_free(data);
+        }
+    }
+    glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_R, GL_CLAMP_TO_EDGE);
+
+    return textureID;
 }
