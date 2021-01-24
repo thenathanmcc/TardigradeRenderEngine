@@ -378,7 +378,7 @@ CMakeFiles/RenderEngine.dir/all: external/assimp/code/CMakeFiles/assimp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RenderEngine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles 55
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles 56
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/RenderEngine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles 0
 .PHONY : CMakeFiles/RenderEngine.dir/rule
@@ -535,12 +535,12 @@ external/glfw-3.3.2/examples/CMakeFiles/heightmap.dir/clean:
 external/glfw-3.3.2/examples/CMakeFiles/sharing.dir/all: external/glfw-3.3.2/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f external/glfw-3.3.2/examples/CMakeFiles/sharing.dir/build.make external/glfw-3.3.2/examples/CMakeFiles/sharing.dir/depend
 	$(MAKE) -f external/glfw-3.3.2/examples/CMakeFiles/sharing.dir/build.make external/glfw-3.3.2/examples/CMakeFiles/sharing.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num= "Built target sharing"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=73 "Built target sharing"
 .PHONY : external/glfw-3.3.2/examples/CMakeFiles/sharing.dir/all
 
 # Build rule for subdir invocation for target.
 external/glfw-3.3.2/examples/CMakeFiles/sharing.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.3.2/examples/CMakeFiles/sharing.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles 0
 .PHONY : external/glfw-3.3.2/examples/CMakeFiles/sharing.dir/rule
@@ -589,12 +589,12 @@ external/glfw-3.3.2/examples/CMakeFiles/particles.dir/clean:
 external/glfw-3.3.2/examples/CMakeFiles/simple.dir/all: external/glfw-3.3.2/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f external/glfw-3.3.2/examples/CMakeFiles/simple.dir/build.make external/glfw-3.3.2/examples/CMakeFiles/simple.dir/depend
 	$(MAKE) -f external/glfw-3.3.2/examples/CMakeFiles/simple.dir/build.make external/glfw-3.3.2/examples/CMakeFiles/simple.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=73 "Built target simple"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num= "Built target simple"
 .PHONY : external/glfw-3.3.2/examples/CMakeFiles/simple.dir/all
 
 # Build rule for subdir invocation for target.
 external/glfw-3.3.2/examples/CMakeFiles/simple.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.3.2/examples/CMakeFiles/simple.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles 0
 .PHONY : external/glfw-3.3.2/examples/CMakeFiles/simple.dir/rule
@@ -805,12 +805,12 @@ external/glfw-3.3.2/tests/CMakeFiles/opacity.dir/clean:
 external/glfw-3.3.2/tests/CMakeFiles/clipboard.dir/all: external/glfw-3.3.2/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f external/glfw-3.3.2/tests/CMakeFiles/clipboard.dir/build.make external/glfw-3.3.2/tests/CMakeFiles/clipboard.dir/depend
 	$(MAKE) -f external/glfw-3.3.2/tests/CMakeFiles/clipboard.dir/build.make external/glfw-3.3.2/tests/CMakeFiles/clipboard.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num= "Built target clipboard"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=55 "Built target clipboard"
 .PHONY : external/glfw-3.3.2/tests/CMakeFiles/clipboard.dir/all
 
 # Build rule for subdir invocation for target.
 external/glfw-3.3.2/tests/CMakeFiles/clipboard.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.3.2/tests/CMakeFiles/clipboard.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles 0
 .PHONY : external/glfw-3.3.2/tests/CMakeFiles/clipboard.dir/rule
@@ -1102,12 +1102,12 @@ external/glfw-3.3.2/tests/CMakeFiles/threads.dir/clean:
 external/glfw-3.3.2/tests/CMakeFiles/cursor.dir/all: external/glfw-3.3.2/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f external/glfw-3.3.2/tests/CMakeFiles/cursor.dir/build.make external/glfw-3.3.2/tests/CMakeFiles/cursor.dir/depend
 	$(MAKE) -f external/glfw-3.3.2/tests/CMakeFiles/cursor.dir/build.make external/glfw-3.3.2/tests/CMakeFiles/cursor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=55 "Built target cursor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num= "Built target cursor"
 .PHONY : external/glfw-3.3.2/tests/CMakeFiles/cursor.dir/all
 
 # Build rule for subdir invocation for target.
 external/glfw-3.3.2/tests/CMakeFiles/cursor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.3.2/tests/CMakeFiles/cursor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles 0
 .PHONY : external/glfw-3.3.2/tests/CMakeFiles/cursor.dir/rule
@@ -1291,12 +1291,12 @@ external/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/clean:
 external/assimp/code/CMakeFiles/assimp.dir/all: external/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/all
 	$(MAKE) -f external/assimp/code/CMakeFiles/assimp.dir/build.make external/assimp/code/CMakeFiles/assimp.dir/depend
 	$(MAKE) -f external/assimp/code/CMakeFiles/assimp.dir/build.make external/assimp/code/CMakeFiles/assimp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51 "Built target assimp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52 "Built target assimp"
 .PHONY : external/assimp/code/CMakeFiles/assimp.dir/all
 
 # Build rule for subdir invocation for target.
 external/assimp/code/CMakeFiles/assimp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 external/assimp/code/CMakeFiles/assimp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles 0
 .PHONY : external/assimp/code/CMakeFiles/assimp.dir/rule
@@ -1319,7 +1319,7 @@ external/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/all: external/assimp/
 external/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/all: external/assimp/code/CMakeFiles/assimp.dir/all
 	$(MAKE) -f external/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make external/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/depend
 	$(MAKE) -f external/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make external/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=52,53 "Built target assimp_cmd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles --progress-num=53 "Built target assimp_cmd"
 .PHONY : external/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1352,7 +1352,7 @@ external/assimp/test/CMakeFiles/unit.dir/all: external/assimp/code/CMakeFiles/as
 
 # Build rule for subdir invocation for target.
 external/assimp/test/CMakeFiles/unit.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles 68
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles 69
 	$(MAKE) -f CMakeFiles/Makefile2 external/assimp/test/CMakeFiles/unit.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles 0
 .PHONY : external/assimp/test/CMakeFiles/unit.dir/rule

@@ -7,6 +7,7 @@
 #include <GLFW/glfw3.h>
 
 #include <iostream>
+#include <vector>
 #include <Shader.hpp>
 #include "stb_image.h"
 #include <glm/glm.hpp>
@@ -18,6 +19,7 @@
 #include "Cube.hpp"
 #include "ObjLoader.hpp"
 #include "Group.hpp"
+#include "CubeMap.hpp"
 #include "ImGui/imgui.h"
 #include "ImGui/imgui_impl_glfw.h"
 #include "ImGui/imgui_impl_opengl3.h"
@@ -25,7 +27,7 @@
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow *window);
-unsigned int loadCubeMap(vector<std::string> faces);
+unsigned int loadCubeMap(std::vector<std::string> faces);
 
 const unsigned int WINDOW_WIDTH = 1280;
 const unsigned int WINDOW_HEIGHT = 720;
@@ -141,28 +143,17 @@ int main() {
     Controls* controls = new Controls(camera);
     controls->setCameraMovementSpeed(30);
 
-    vector<std::string> faces {
-        "src/textures/right.jpg",
-        "src/textures/left.jpg",
-        "src/textures/top.jpg",
-        "src/textures/bottom.jpg",
-        "src/textures/front.jpg",
-        "src/textures/back.jpg",
-    }
+    std::vector<std::string> faces {
+        "src/textures/cubeMap/right.jpg",
+        "src/textures/cubeMap/left.jpg",
+        "src/textures/cubeMap/top.jpg",
+        "src/textures/cubeMap/bottom.jpg",
+        "src/textures/cubeMap/front.jpg",
+        "src/textures/cubeMap/back.jpg",
+    };
 
-    unsigned int skyboxVAO, skyboxVBO;
-    glGenVertexArrays(1, &skyboxVAO);
-    glGenBuffers(1, &skyboxVBO);
-    glBindVertexArray(skyboxVBO);
-    glBindBuffer(GL_ARRAY_BUFFER, skyboxVBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(skyboxVertices), &skyBoxVertices, GL_STATIC_DRAW);
-    glEnableVertexAttribArray(0);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
 
-    unsigned int cubeMapTexture = loadCubeMap(faces);
-
-    cubeMapShader->use();
-    cubeMapShader->setInt("skybox", 0);
+    CubeMap* cubemap = new CubeMap(faces, cubeMapShader, WINDOW_HEIGHT, WINDOW_WIDTH);
 
     while (!glfwWindowShouldClose(window)) {
 
@@ -186,6 +177,7 @@ int main() {
 
         controls->checkUserInputs(window);
         scene->render(camera);
+        cubemap->render(camera);
 
 
         ImGui::Render();
@@ -204,7 +196,7 @@ void framebuffer_size_callback(GLFWwindow *window, int width, int height) {
 }
 
 
-unsigned int loadCubeMap(vector<std::string> faces) {
+unsigned int loadCubeMap(std::vector<std::string> faces) {
     unsigned int textureID;
     glGenTextures(1, &textureID);
     glBindTexture(GL_TEXTURE_CUBE_MAP, textureID);
@@ -214,7 +206,7 @@ unsigned int loadCubeMap(vector<std::string> faces) {
     for (unsigned int i = 0; i < faces.size(); i++) {
         unsigned char * data = stbi_load(faces[i].c_str(), &width, &height, &nrChannels, 0);
         if (data) {
-            glTextImage2D(GL_TEXTURE_CUBE_MAP_POSITIVE_X + i, 0, GL_RGB, width, height, 0, GL_RGB, GLUNSIGNED_BYTE, data);
+            glTexImage2D(GL_TEXTURE_CUBE_MAP_POSITIVE_X + i, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
             stbi_image_free(data);
         } else {
             std::cout << "ERROR::FAILED_TO_LOAD_CUBEMAP_TEXTURE" << faces[i] << "\n" << std::endl;

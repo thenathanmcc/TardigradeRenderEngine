@@ -718,6 +718,33 @@ src/Cube.cpp.s:
 	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/Cube.cpp.s
 .PHONY : src/Cube.cpp.s
 
+src/CubeMap.o: src/CubeMap.cpp.o
+
+.PHONY : src/CubeMap.o
+
+# target to build an object file
+src/CubeMap.cpp.o:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/CubeMap.cpp.o
+.PHONY : src/CubeMap.cpp.o
+
+src/CubeMap.i: src/CubeMap.cpp.i
+
+.PHONY : src/CubeMap.i
+
+# target to preprocess a source file
+src/CubeMap.cpp.i:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/CubeMap.cpp.i
+.PHONY : src/CubeMap.cpp.i
+
+src/CubeMap.s: src/CubeMap.cpp.s
+
+.PHONY : src/CubeMap.s
+
+# target to generate assembly for a file
+src/CubeMap.cpp.s:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/CubeMap.cpp.s
+.PHONY : src/CubeMap.cpp.s
+
 src/Group.o: src/Group.cpp.o
 
 .PHONY : src/Group.o
@@ -1208,6 +1235,9 @@ help:
 	@echo "... src/Cube.o"
 	@echo "... src/Cube.i"
 	@echo "... src/Cube.s"
+	@echo "... src/CubeMap.o"
+	@echo "... src/CubeMap.i"
+	@echo "... src/CubeMap.s"
 	@echo "... src/Group.o"
 	@echo "... src/Group.i"
 	@echo "... src/Group.s"

@@ -41,6 +41,7 @@ add_executable(RenderEngine
     src/Mesh.cpp
     src/Material.cpp
     src/Group.cpp
+    src/CubeMap.cpp
     src/ImGui/imgui.cpp
     src/ImGui/imgui_demo.cpp
     src/ImGui/imgui_draw.cpp

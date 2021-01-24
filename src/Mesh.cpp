@@ -42,8 +42,7 @@ void Mesh::setVertices(std::vector<glm::vec3> vertices) {
 void Mesh::setUVs(std::vector<float> uvs) {
 	m_uvs.clear();
 	for (int i = 0; i < uvs.size() / 2; i++) {
-		//m_uvs.push_back(glm::vec2(uvs[i * 2], uvs[i * 2 + 1]));
-		m_uvs.push_back(glm::vec2(uvs[i*2+0],uvs[i*2+1]));
+		m_uvs.push_back(glm::vec2(uvs[i * 2 + 0],uvs[i * 2 + 1]));
 	}
 
 	glGenBuffers(1, &m_uvBufferID);
@@ -71,7 +70,6 @@ void Mesh::setNormals(std::vector<glm::vec3> normals) {
     glBindBuffer(GL_ARRAY_BUFFER, m_normalBufferID);
     glBufferData(GL_ARRAY_BUFFER, m_normals.size() * sizeof(glm::vec3), &m_normals[0], GL_STATIC_DRAW);
 }
-
 
 void Mesh::setIndices(std::vector<unsigned short> indices) {
 	m_indices.clear();
@@ -125,7 +123,6 @@ void Mesh::render(Camera* camera) {
 		glDisableVertexAttribArray(1);
 	if (m_normals.size() != 0)
 		glDisableVertexAttribArray(2);
-
 }
 
 void Mesh::setMaterialIndex(int index) {
