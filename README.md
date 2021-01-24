@@ -5,7 +5,7 @@ Simple Render Engine Project. This is a work in progress...
 Am learning OpenGL following the tutorials found at https://learnopengl.com/
 
 ### Screenshots
-![Cube Render](./screenshots/screenshot1.png)
+![Cube Render](./screenshots/render_screenshot.png)
 
 
 ### Things to do
