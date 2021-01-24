@@ -165,6 +165,7 @@ int main() {
     y->setColour(glm::vec3(0.0, 1.0, 0.0));
     Line* z = new Line(glm::vec3(0.0, 0.0, -1000.0), glm::vec3(0.0, 0.0, 1000.0), lineShader);
     z->setColour(glm::vec3(0.0, 0.0, 1.0));
+    std::cout << "CubeMap and World space axes created" << std::endl;
 
     while (!glfwWindowShouldClose(window)) {
 
