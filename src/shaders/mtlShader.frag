@@ -1,7 +1,6 @@
 #version 330 core
 
 // Interpolated values from the vertex shaders
-// e.g.
 in vec2 UV;
 in vec3 posWorldspace;
 in vec3 eyeDirectionCameraspace;

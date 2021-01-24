@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/nathan/projects/c++/TardigradeRenderEngine/src/ImGui/imgui_impl_glfw.cpp" "/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_glfw.cpp.o"
   "/home/nathan/projects/c++/TardigradeRenderEngine/src/ImGui/imgui_impl_opengl3.cpp" "/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_opengl3.cpp.o"
   "/home/nathan/projects/c++/TardigradeRenderEngine/src/ImGui/imgui_widgets.cpp" "/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles/RenderEngine.dir/src/ImGui/imgui_widgets.cpp.o"
+  "/home/nathan/projects/c++/TardigradeRenderEngine/src/Line.cpp" "/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles/RenderEngine.dir/src/Line.cpp.o"
   "/home/nathan/projects/c++/TardigradeRenderEngine/src/Material.cpp" "/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles/RenderEngine.dir/src/Material.cpp.o"
   "/home/nathan/projects/c++/TardigradeRenderEngine/src/Mesh.cpp" "/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles/RenderEngine.dir/src/Mesh.cpp.o"
   "/home/nathan/projects/c++/TardigradeRenderEngine/src/ObjLoader.cpp" "/home/nathan/projects/c++/TardigradeRenderEngine/CMakeFiles/RenderEngine.dir/src/ObjLoader.cpp.o"

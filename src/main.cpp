@@ -20,6 +20,7 @@
 #include "ObjLoader.hpp"
 #include "Group.hpp"
 #include "CubeMap.hpp"
+#include "Line.hpp"
 #include "ImGui/imgui.h"
 #include "ImGui/imgui_impl_glfw.h"
 #include "ImGui/imgui_impl_opengl3.h"
@@ -81,6 +82,7 @@ int main() {
 
     Shader* myShader = new Shader("src/shaders/vertex.shader", "src/shaders/fragment.shader");
     Shader* cubeMapShader = new Shader("src/shaders/cubeMapVertex.shader", "src/shaders/cubeMapFragment.shader");
+    Shader* lineShader = new Shader("src/shaders/lineVertex.shader", "src/shaders/lineFragment.shader");
 
     float skyboxVertices[] = {
         // positions          
@@ -131,10 +133,12 @@ int main() {
     Group* monkey = new Group();
     bool res = objLoader->loadOBJMTL("src/models/monkey.obj", monkey);
     monkey->init();
+    std::cout << "Loaded Model" << std::endl;
 
     Scene* scene = new Scene();
     monkey->setScaleMatrix(0.001f);
     scene->addObject(monkey);
+    std::cout << "Created Scene" << std::endl;
     
     
     Camera* camera = new Camera();
@@ -142,6 +146,7 @@ int main() {
     camera->setCameraTarget(glm::vec3(0, 0, 0));
     Controls* controls = new Controls(camera);
     controls->setCameraMovementSpeed(30);
+    std::cout << "Created Camera" << std::endl;
 
     std::vector<std::string> faces {
         "src/textures/cubeMap/right.jpg",
@@ -154,6 +159,12 @@ int main() {
 
 
     CubeMap* cubemap = new CubeMap(faces, cubeMapShader, WINDOW_HEIGHT, WINDOW_WIDTH);
+    Line* x = new Line(glm::vec3(-1000.0, 0.0, 0.0), glm::vec3(1000.0, 0.0, 0.0), lineShader);
+    x->setColour(glm::vec3(1.0, 0.0, 0.0));
+    Line* y = new Line(glm::vec3(0.0, -1000.0, 0.0), glm::vec3(0.0, 1000.0, 0.0), lineShader);
+    y->setColour(glm::vec3(0.0, 1.0, 0.0));
+    Line* z = new Line(glm::vec3(0.0, 0.0, -1000.0), glm::vec3(0.0, 0.0, 1000.0), lineShader);
+    z->setColour(glm::vec3(0.0, 0.0, 1.0));
 
     while (!glfwWindowShouldClose(window)) {
 
@@ -178,6 +189,9 @@ int main() {
         controls->checkUserInputs(window);
         scene->render(camera);
         cubemap->render(camera);
+        x->render(camera);
+        y->render(camera);
+        z->render(camera);
 
 
         ImGui::Render();

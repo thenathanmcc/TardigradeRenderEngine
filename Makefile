@@ -934,6 +934,33 @@ src/ImGui/imgui_widgets.cpp.s:
 	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/ImGui/imgui_widgets.cpp.s
 .PHONY : src/ImGui/imgui_widgets.cpp.s
 
+src/Line.o: src/Line.cpp.o
+
+.PHONY : src/Line.o
+
+# target to build an object file
+src/Line.cpp.o:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/Line.cpp.o
+.PHONY : src/Line.cpp.o
+
+src/Line.i: src/Line.cpp.i
+
+.PHONY : src/Line.i
+
+# target to preprocess a source file
+src/Line.cpp.i:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/Line.cpp.i
+.PHONY : src/Line.cpp.i
+
+src/Line.s: src/Line.cpp.s
+
+.PHONY : src/Line.s
+
+# target to generate assembly for a file
+src/Line.cpp.s:
+	$(MAKE) -f CMakeFiles/RenderEngine.dir/build.make CMakeFiles/RenderEngine.dir/src/Line.cpp.s
+.PHONY : src/Line.cpp.s
+
 src/Material.o: src/Material.cpp.o
 
 .PHONY : src/Material.o
@@ -1259,6 +1286,9 @@ help:
 	@echo "... src/ImGui/imgui_widgets.o"
 	@echo "... src/ImGui/imgui_widgets.i"
 	@echo "... src/ImGui/imgui_widgets.s"
+	@echo "... src/Line.o"
+	@echo "... src/Line.i"
+	@echo "... src/Line.s"
 	@echo "... src/Material.o"
 	@echo "... src/Material.i"
 	@echo "... src/Material.s"

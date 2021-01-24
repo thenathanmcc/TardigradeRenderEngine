@@ -19,7 +19,7 @@ Object::Object() {
 void Object::setShader(Shader* shader) {
 	if (m_shader != NULL)
 		delete m_shader;
-
+	
 	m_shader = shader;
 }
 

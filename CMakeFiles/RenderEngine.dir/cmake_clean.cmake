@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_glfw.cpp.o"
   "CMakeFiles/RenderEngine.dir/src/ImGui/imgui_impl_opengl3.cpp.o"
   "CMakeFiles/RenderEngine.dir/src/ImGui/imgui_widgets.cpp.o"
+  "CMakeFiles/RenderEngine.dir/src/Line.cpp.o"
   "CMakeFiles/RenderEngine.dir/src/Material.cpp.o"
   "CMakeFiles/RenderEngine.dir/src/Mesh.cpp.o"
   "CMakeFiles/RenderEngine.dir/src/ObjLoader.cpp.o"
